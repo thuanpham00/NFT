@@ -79,13 +79,553 @@
         />
         <link rel="manifest" href="./assets/favicon/manifest.json" />
         <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
         <meta name="theme-color" content="#ffffff" />
 
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/3115b3f4f1.js"></script>
+
         <!-- embed font -->
-        <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- style css -->
+        <link rel="stylesheet" href="./assets/css/home.css" />
     </head>
     <body>
-        <h1>pham thuan</h1>
+        <!-- PC header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- logo -->
+                    <figure>
+                        <img
+                            src="./assets/img/image 27 (Traced).png"
+                            alt="Meecats"
+                            class="logo"
+                        />
+                    </figure>
+
+                    <!-- form -->
+                    <form
+                        action=""
+                        method="post"
+                        autocomplete="off"
+                        class="form__search"
+                    >
+                        <label for="form__label" class="form__label">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                        <input
+                            required
+                            type="text"
+                            class="form__input"
+                            id="form__input"
+                            placeholder="Search for artworks, collections, artists ets"
+                        />
+                    </form>
+
+                    <!-- Navigation -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <!-- item 1 -->
+                            <li class="navbar-item">
+                                <a class="navbar-item__link" href="#!">Home</a>
+                                <span class="navbar-item__icon">
+                                    <svg
+                                        width="27"
+                                        height="27"
+                                        viewBox="0 0 27 27"
+                                        fill="currentcolor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M17.2969 12.2344L13.5 16.4531L9.70312 12.2344"
+                                            stroke="white"
+                                            stroke-width="1.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </span>
+                            </li>
+                            <!-- item 2 -->
+                            <li class="navbar-item">
+                                <a class="navbar-item__link" href="#!"
+                                    >Explore
+                                </a>
+                                <span class="navbar-item__icon">
+                                    <svg
+                                        width="27"
+                                        height="27"
+                                        viewBox="0 0 27 27"
+                                        fill="currentcolor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M17.2969 12.2344L13.5 16.4531L9.70312 12.2344"
+                                            stroke="white"
+                                            stroke-width="1.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </span>
+                            </li>
+                            <!-- item 3 -->
+                            <li class="navbar-item">
+                                <a class="navbar-item__link" href="#!"
+                                    >Community
+                                </a>
+                                <span class="navbar-item__icon">
+                                    <svg
+                                        width="27"
+                                        height="27"
+                                        viewBox="0 0 27 27"
+                                        fill="currentcolor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M17.2969 12.2344L13.5 16.4531L9.70312 12.2344"
+                                            stroke="white"
+                                            stroke-width="1.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- action -->
+                    <a href="#!" class="btn header__btn">Connect</a>
+                </div>
+            </div>
+        </header>
+
+        <main style="height: 4000px">
+            <section class="hero-wrap">
+                <div class="container">
+                    <div class="hero__content">
+                        <h1 class="hero__heading">Explore Virtual Worlds</h1>
+                        <p class="hero__desc">
+                            Virtual worlds are blockchain-fueled alternative
+                            realities where users can create and trade digital
+                            goods, play games, and display NFTs in galleries,
+                            among other intriguing use cases.
+                        </p>
+                        <div class="hero__btn">
+                            <a href="#!" class="hero__link btn">Explore Now</a>
+                        </div>
+                        <img
+                            src="./assets/img/hero_icon1.png"
+                            alt="hero"
+                            class="hero__icon icon-1"
+                        />
+                        <img
+                            src="./assets/img/hero_icon2.png"
+                            alt="hero"
+                            class="hero__icon icon-2"
+                        />
+                        <img
+                            src="./assets/img/hero_icon3.png"
+                            alt="hero"
+                            class="hero__icon icon-3"
+                        />
+                    </div>
+
+                    <div class="hero__media">
+                        <!-- card 1 -->
+                        <div class="hero__card hero__card--left">
+                            <img
+                                src="./assets/img/hero1.png"
+                                alt=""
+                                class="hero__img"
+                            />
+                            <div class="hero__body">
+                                <div class="hero__title">
+                                    Alternate Medium Space
+                                </div>
+                                <div class="hero__row">
+                                    <div class="hero__arkwork">Arkwork</div>
+                                    <div class="hero__total">Total Sale</div>
+                                </div>
+                                <div class="hero__row hero__row--2">
+                                    <div class="hero__index">12</div>
+                                    <div class="hero__eth">0.6 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="hero__card hero__card--center">
+                            <img
+                                src="./assets/img/hero2.png"
+                                alt=""
+                                class="hero__img hero__img--center"
+                            />
+                            <div class="hero__body">
+                                <div class="hero__title">
+                                    Alternate Medium Space
+                                </div>
+                                <div class="hero__row">
+                                    <div class="hero__arkwork">Arkwork</div>
+                                    <div class="hero__total">Total Sale</div>
+                                </div>
+                                <div class="hero__row hero__row--2">
+                                    <div class="hero__index">12</div>
+                                    <div class="hero__eth">0.6 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+                        <div class="hero__card hero__card--right">
+                            <img
+                                src="./assets/img/hero3.png"
+                                alt=""
+                                class="hero__img"
+                            />
+                            <div class="hero__body">
+                                <div class="hero__title">
+                                    Alternate Medium Space
+                                </div>
+                                <div class="hero__row">
+                                    <div class="hero__arkwork">Arkwork</div>
+                                    <div class="hero__total">Total Sale</div>
+                                </div>
+                                <div class="hero__row hero__row--2">
+                                    <div class="hero__index">12</div>
+                                    <div class="hero__eth">0.6 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="collection">
+                <div class="container">
+                    <div class="collection__row">
+                        <h2 class="collection__heading section--heading">
+                            Top collections over last 7 days
+                        </h2>
+                        <a href="#!" class="collection__link">View all</a>
+                    </div>
+
+                    <div class="collection__list">
+                        <!-- item 1 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">1</div>
+                            <img
+                                src="./assets/img/collection1.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    BoredApe Yecht
+                                </div>
+                                <div class="collection-item__coin">
+                                    $45,630,657
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">2</div>
+                            <img
+                                src="./assets/img/collection2.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    The Rebeis
+                                </div>
+                                <div class="collection-item__coin">
+                                    $32,258,741
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">3</div>
+                            <img
+                                src="./assets/img/collection3.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    Clone X
+                                </div>
+                                <div class="collection-item__coin">
+                                    $40,457,365
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 4 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">4</div>
+                            <img
+                                src="./assets/img/collection4.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    CryptoSkulls
+                                </div>
+                                <div class="collection-item__coin">
+                                    $214,630,657
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 5 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">5</div>
+                            <img
+                                src="./assets/img/collection5.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    IreneDAO
+                                </div>
+                                <div class="collection-item__coin">
+                                    $75,850,120
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 6 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">6</div>
+                            <img
+                                src="./assets/img/collection6.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    Lil Heroes
+                                </div>
+                                <div class="collection-item__coin">
+                                    $45,630,657
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 7 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">7</div>
+                            <img
+                                src="./assets/img/collection7.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    BoredApe Yecht
+                                </div>
+                                <div class="collection-item__coin">
+                                    $45,630,657
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 8 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">8</div>
+                            <img
+                                src="./assets/img/collection8.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    Phantabear
+                                </div>
+                                <div class="collection-item__coin">
+                                    $24,57,441
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 9 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">9</div>
+                            <img
+                                src="./assets/img/collection9.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    Fomo Mofos
+                                </div>
+                                <div class="collection-item__coin">
+                                    $45,204,657
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="artwork">
+                <div class="container">
+                    <div class="artwork__row">
+                        <h2 class="artwork__heading section--heading">
+                            Latest artworks with most valued bids
+                        </h2>
+                        <div class="artwork__info">
+                            <span class="artwork__title">NFTs</span>
+                            <span class="artwork__desc">Description</span>
+                        </div>
+                    </div>
+                    <div class="artwork__list">
+                        <!-- item 1 -->
+                        <article class="artwork-item">
+                            <figure>
+                                <img
+                                    src="./assets/img/artworks1.png"
+                                    alt=""
+                                    class="artwork-item__img"
+                                />
+                            </figure>
+                            <div class="artwork-item__search">
+                                <div class="search__info">Total Sale</div>
+                                <div class="search__info">0.6 ETH</div>
+                            </div>
+                            <div class="artwork-item__body">
+                                <h3 class="artwork-item__title">
+                                    ALTERNATE MEDIUM SPACE
+                                </h3>
+                                <div class="artwork-item__row">
+                                    <span class="artwork-item__desc">
+                                        Collected by (5)
+                                    </span>
+                                    <span class="artwork-item__current">
+                                        Current Bid
+                                    </span>
+                                </div>
+                                <div class="artwork-item__row--bottom">
+                                    <div class="avatar-group">
+                                        <div class="avatar-item">
+                                            <img src="./assets/icon/artwork2.png" alt="" class="avatar-item__icon">
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img src="./assets/icon/artwork3.png" alt="" class="avatar-item__icon">
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img src="./assets/icon/artwork1.png" alt="" class="avatar-item__icon">
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img src="./assets/icon/artwork1.png" alt="" class="avatar-item__icon">
+                                        </div>
+                                    </div>
+                                    <span class="avatar-item__coin">16.0 ETH</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- item 2 -->
+                        <article class="artwork-item">
+                            <figure>
+                                <img
+                                    src="./assets/img/artworks2.png"
+                                    alt=""
+                                    class="artwork-item__img"
+                                />
+                            </figure>
+                            <div class="artwork-item__search">
+                                <div class="search__info">Total Sale</div>
+                                <div class="search__info">0.6 ETH</div>
+                            </div>
+                            <div class="artwork-item__body">
+                                <h3 class="artwork-item__title">
+                                    ALTERNATE MEDIUM SPACE
+                                </h3>
+                                <div class="artwork-item__row">
+                                    <span class="artwork-item__desc">
+                                        Collected by (5)
+                                    </span>
+                                    <span class="artwork-item__current">
+                                        Current Bid
+                                    </span>
+                                </div>
+                                <div class="artwork-item__row--bottom">
+                                    <div class="avatar-group">
+                                        <div class="avatar-item">
+                                            <img src="./assets/icon/artwork2.png" alt="" class="avatar-item__icon">
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img src="./assets/icon/artwork3.png" alt="" class="avatar-item__icon">
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img src="./assets/icon/artwork1.png" alt="" class="avatar-item__icon">
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img src="./assets/icon/artwork1.png" alt="" class="avatar-item__icon">
+                                        </div>
+                                    </div>
+                                    <span class="avatar-item__coin">16.0 ETH</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <!-- item 3 -->
+                        <article class="artwork-item">
+                            <figure>
+                                <img
+                                    src="./assets/img/artworks3.png"
+                                    alt=""
+                                    class="artwork-item__img"
+                                />
+                            </figure>
+                            <div class="artwork-item__search">
+                                <div class="search__info">Total Sale</div>
+                                <div class="search__info">0.6 ETH</div>
+                            </div>
+                            <div class="artwork-item__body">
+                                <h3 class="artwork-item__title">
+                                    ALTERNATE MEDIUM SPACE
+                                </h3>
+                                <div class="artwork-item__row">
+                                    <span class="artwork-item__desc">
+                                        Collected by (5)
+                                    </span>
+                                    <span class="artwork-item__current">
+                                        Current Bid
+                                    </span>
+                                </div>
+                                <div class="artwork-item__row--bottom">
+                                    <div class="avatar-group">
+                                        <div class="avatar-item">
+                                            <img src="./assets/icon/artwork2.png" alt="" class="avatar-item__icon">
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img src="./assets/icon/artwork3.png" alt="" class="avatar-item__icon">
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img src="./assets/icon/artwork1.png" alt="" class="avatar-item__icon">
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img src="./assets/icon/artwork1.png" alt="" class="avatar-item__icon">
+                                        </div>
+                                    </div>
+                                    <span class="avatar-item__coin">16.0 ETH</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
