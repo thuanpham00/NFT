@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Clash Display" sans-serif;
+}
+
+/* h1 {
+    font-size: 4rem;
+    font-weight: 500;
+} */
