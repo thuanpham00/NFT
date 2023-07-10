@@ -273,10 +273,6 @@ a {
     transition: ease 0.3s;
 }
 
-.hero__card:hover {
-    transform: translateY(-20px);
-}
-
 .hero__card--center .hero__body {
     position: absolute;
     bottom: 20px;

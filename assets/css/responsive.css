@@ -490,43 +490,263 @@
         min-width: 150px;
     }
 
+    .hero__media {
+        position: relative;
+    }
+
     .hero__card--center {
+        position: absolute;
+        top: -46px;
         width: 120px;
         height: 180px;
     }
 
     .hero__card--center .hero__body {
-        padding: 6px;
-        width: 107px;
+        padding: 4.5px;
+        width: 112px;
         height: 50px;
         left: 4px;
         bottom: 6px;
     }
 
     .hero__card--left {
-        display: none;
+        position: absolute;
+        left: 2px;
+        top: -90px;
+        width: 152px;
+        height: 185px;
     }
 
     .hero__card--left .hero__body {
-        display: none;
+        padding: 4.5px;
+        width: 108px;
+        height: 50px;
+        left: 36px;
+        bottom: 18px;
+        rotate: -15deg;
     }
 
     .hero__card--right {
-        display: none;
+        position: absolute;
+        right: 0;
+        top: -90px;
+        width: 152px;
+        height: 185px;
+    }
+
+    .hero__card--right .hero__body {
+        padding: 4.5px;
+        width: 108px;
+        height: 50px;
+        left: 8px;
+        bottom: 16px;
+        rotate: 15deg;
     }
 
     .hero__title {
-        font-size: 0.8rem;
-        width: 140px;
-        margin-bottom: 10px;
+        margin-bottom: 6px;
+        font-size: 0.95rem;
+        width: 98px;
+        color: #fff;
+        font-weight: 500;
+        line-height: 11.422px;
+        letter-spacing: 1.19px;
     }
 
     .hero__row {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
     .hero__row--2 {
-        margin-top: 5px;
+        margin-top: 3px;
+        font-size: 0.76rem;
+    }
+
+    .collection__row {
+        margin-top: 50px;
+    }
+
+    .collection__heading {
+        width: 198px;
+        font-size: 2rem;
+    }
+
+    .collection__link {
+        font-size: 1.4rem;
+    }
+
+    .collection__list {
+        margin-top: 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .collection-item {
+        width: 158px;
+    }
+
+    .collection-item__title {
+        font-size: 1.4rem;
+        width: 70px;
+    }
+
+    .collection-item__avatar,
+    .collection-item__info {
+        margin-left: 10px;
+    }
+
+    .artwork {
+        margin-top: 0;
+        padding-top: 60px;
+    }
+
+    .artwork__row {
+        flex-direction: column;
+    }
+
+    .artwork__heading {
+        width: 215px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .artwork__info {
+        margin-top: 20px;
+    }
+
+    .artwork__title {
+        font-size: 1.4rem;
+        line-height: 20px;
+    }
+
+    .artwork__title::after {
+        bottom: -10px;
+        width: 32px;
+    }
+
+    .artwork__desc {
+        font-size: 1.2rem;
+    }
+
+    .artwork__list {
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .discover {
+        padding: 0;
+    }
+
+    .discover__heading {
+        font-size: 2rem;
+    }
+
+    .discover__link {
+        padding: 4px 12px;
         font-size: 1rem;
+    }
+
+    .discover__link-more {
+        display: none;
+    }
+
+    .discover-card__item {
+        width: 335px;
+        height: 440px;
+    }
+
+    .discover-card__thumb {
+        height: 291px;
+    }
+
+    .discover-card__body {
+        padding: 20px;
+    }
+
+    .discover-card__title {
+        width: 295px;
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 2.5px;
+    }
+
+    .discover-card__desc {
+        font-size: 1.2rem;
+        line-height: 22px;
+    }
+
+    .discover-card__info {
+        font-size: 1.6rem;
+    }
+
+    .avatar-item__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .discover-card__row--bottom {
+        margin-top: 6px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .discover-card__list {
+        column-gap: 0;
+    }
+
+    .discover-card__item {
+        width: 100%;
+    }
+
+    .discover-card__thumb {
+        width: 100%;
+    }
+
+    .artist {
+        margin-top: 114px;
+    }
+
+    .artist__heading {
+        font-size: 2rem;
+    }
+
+    .artist__desc {
+        width: 335px;
+        font-size: 1.2rem;
+    }
+
+    .artist-item__avatar {
+        height: 81px;
+        width: 81px;
+        top: -40px
+    }
+
+    .artist-item__body {
+        height: 239px;
+    }
+
+    .artist-item__title {
+        margin-top: -50px;
+        font-size: 1.6rem;
+    }
+
+    .artist-item__desc {
+        width: 227px;
+        font-size: 1.4rem;
+    }
+
+    .artist-item__link {
+        min-width: 295px;
+        height: 46px;
+        font-size: 2rem;
+    }
+
+    .artist__list {
+        grid-template-columns: 1fr;
+    }
+
+    .artist-item {
+
     }
 }
