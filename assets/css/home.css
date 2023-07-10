@@ -154,6 +154,7 @@ a {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.2px;
+    text-align: center;
 }
 
 .hero__btn {
@@ -525,4 +526,110 @@ a {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+.artwork__icon {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Discover */
+.discover {
+    padding: 75px 0;
+}
+
+.discover-row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discover__link-more {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.discover__list {
+    margin-top: 20px;
+    display: flex;
+    column-gap: 20px;
+}
+
+.discover__link {
+    transition: ease 0.3s;
+    color: #cfcfcf;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 10px 20px 12px;
+    border: 1.5px solid #212127;
+}
+
+.discover__link:hover {
+    color: #fff;
+    background: #212127;
+}
+
+.discover-card__list {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 60px;
+}
+
+.discover-card__item {
+    width: 570px;
+    height: 798px;
+    transition: ease 0.3s;
+}
+
+.discover-card__item:hover {
+    transform: scale(0.9);
+}
+
+.discover-card__thumb {
+    display: block;
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+    transition: ease 0.3s;
+}
+
+.discover-card__body {
+    padding: 20px 44px 40px 20px;
+    background: #212127;
+    backdrop-filter: blur(112.5px);
+}
+
+.discover-card__title {
+    color: #ececec;
+    font-size: 3.4rem;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: 4.76px;
+}
+
+.discover-card__row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discover-card__row--bottom {
+    margin-top: 11px;
+}
+
+.discover-card__desc {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.discover-card__info {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 500;
 }
