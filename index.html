@@ -98,12 +98,25 @@
 
         <!-- style css -->
         <link rel="stylesheet" href="./assets/css/home.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
         <!-- PC header -->
         <header class="header">
             <div class="container">
                 <div class="header__inner">
+                    <!-- tablet/mobile -->
+                    <label for="menu-checkbox" class="toggle-menu"
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentcolor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            /></svg
+                    ></label>
+
                     <!-- logo -->
                     <figure>
                         <img
@@ -134,7 +147,7 @@
 
                     <!-- Navigation -->
                     <nav class="navbar">
-                        <ul class="navbar__list">
+                        <ul class="navbar__list" id="navPC">
                             <!-- item 1 -->
                             <li class="navbar-item">
                                 <a class="navbar-item__link" href="#!">Home</a>
@@ -202,12 +215,68 @@
                                     </svg>
                                 </span>
                             </li>
+                            <li class="show-on-mobile separate">
+                                <a href="#!" class="connect">Connect</a>
+                            </li>
                         </ul>
                     </nav>
 
                     <!-- action -->
                     <a href="#!" class="btn header__btn">Connect</a>
                 </div>
+            </div>
+        </header>
+
+        <!-- tablet/mobile header -->
+        <header class="mobile-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <!-- overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <!-- menu-content -->
+            <div class="menu-drawer">
+                <!-- logo -->
+                <div class="name">
+                    <a href="#!">
+                        <img src="./assets/img/artist3.png" alt="Meecats" />
+                    </a>
+                    <span class="name__thuan">Thuan</span>
+                </div>
+
+                <!-- form -->
+                <form
+                    action=""
+                    method="post"
+                    autocomplete="off"
+                    class="form__search"
+                >
+                    <label for="form__label" class="form__label">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <input
+                        required
+                        type="text"
+                        class="form__input"
+                        id="form__input"
+                        placeholder="Search for artworks, collections, artists ets"
+                    />
+                </form>
+
+                <!-- navigation -->
+                <ul id="navMobile"></ul>
+
+                <script>
+                    const pcNav = document.querySelector("#navPC");
+                    const mobileNav = document.querySelector("#navMobile");
+
+                    <!-- copy form pc-nav to mobile-nav -->
+                    mobileNav.innerHTML = pcNav.innerHTML;
+                </script>
             </div>
         </header>
 
@@ -493,7 +562,7 @@
                         <article class="artwork-item">
                             <figure>
                                 <img
-                                    src="./assets/img/artworks1.png"
+                                    src="./assets/img/artworks4.png"
                                     alt=""
                                     class="artwork-item__img"
                                 />
