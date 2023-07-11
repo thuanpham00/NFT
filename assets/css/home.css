@@ -808,10 +808,6 @@ a {
     transition: ease 0.3s;
 }
 
-.news-content__item:hover {
-    transform: scale(1.1);
-}
-
 .news-content__desc {
     color: #a4a4a4;
     font-size: 1.5rem;

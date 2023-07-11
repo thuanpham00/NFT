@@ -632,6 +632,10 @@
         grid-template-columns: 1fr;
     }
 
+    .artwork-item__body {
+        padding: 20px 30px;
+    }
+
     .discover {
         padding: 0;
     }
@@ -719,7 +723,7 @@
     .artist-item__avatar {
         height: 81px;
         width: 81px;
-        top: -40px
+        top: -40px;
     }
 
     .artist-item__body {
@@ -747,6 +751,233 @@
     }
 
     .artist-item {
+        width: 100%;
+        height: 100%;
+    }
 
+    .artist-item__desc {
+        margin-bottom: 20px;
+    }
+
+    .artist-item__link {
+        color: #fff;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        padding: 8px 20px;
+    }
+
+    .news-media {
+        height: 377px;
+    }
+
+    .news-media__desc {
+        font-size: 1.2rem;
+    }
+
+    .news-media__title {
+        width: 295px;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    .news-media__body {
+        padding: 20px;
+    }
+
+    .news-media__link,
+    .news-content__link {
+        --height: 38px;
+        min-width: 81px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 17px;
+        text-transform: capitalize;
+    }
+
+    .date {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .news__inner {
+        row-gap: 60px;
+    }
+
+    .news-content {
+        row-gap: 20px;
+    }
+
+    .news-content__item {
+        padding: 20px;
+    }
+
+    .news-content__title {
+        font-size: 2rem;
+    }
+
+    .news-content__desc {
+        font-size: 1.5rem;
+        color: #a4a4a4;
+        line-height: 17px;
+    }
+
+    .about {
+        margin-top: 0;
+        padding: 60px 0 0;
+    }
+
+    .about__heading {
+        width: 227px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    .about__column:nth-child(1) .about-item:nth-child(1) {
+        height: 133px;
+    }
+
+    .about__column:nth-child(1) .about-item:nth-child(2) {
+        height: 170px;
+    }
+
+    .about-item__thumb {
+        width: 34px;
+        height: 34px;
+        flex-shrink: 0;
+    }
+
+    .about-item__title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .about-item__desc {
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .about-item__desc--bottom {
+        margin-top: 16px;
+        font-size: 1.4rem;
+        width: 303px;
+    }
+
+    .about__column {
+        width: 100%;
+    }
+
+    .about-item {
+        padding: 16px 16px 19px;
+    }
+
+    .about__btn {
+        margin-top: 30px;
+        min-width: 99px;
+        --height: 42px;
+        font-size: 1.4rem;
+        line-height: 22px;
+    }
+
+    .subscribe {
+        margin: 60px 0;
+    }
+
+    .subscribe__inner {
+        padding: 60px 0;
+    }
+
+    .subscribe__heading {
+        width: 230px;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    .subscribe__desc {
+        margin-top: 10px;
+        width: 295px;
+        font-size: 1.2rem;
+        line-height: 22px;
+        letter-spacing: 0.12px;
+    }
+
+    .subscribe__decor.decor1 {
+        width: 32px;
+        height: 33px;
+        left: 6px;
+        bottom: 22px;
+    }
+
+    .subscribe__decor.decor2 {
+        width: 19px;
+        height: 32px;
+        right: -12px;
+        top: 21px;
+    }
+
+    .subscribe__form {
+        margin-top: 20px;
+        width: 232px;
+        height: 50px;
+    }
+
+    .subscribe__input {
+        padding-left: 15px;
+        font-size: 1.4rem;
+        line-height: 20px;
+        letter-spacing: 0.14px;
+    }
+
+    .subscribe__submit {
+        right: -4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        width: 38px;
+        height: 38px;
+        font-size: 2rem;
+    }
+
+    .footer__logo {
+        width: 107px;
+        height: 42px;
+    }
+
+    .footer__list {
+        column-gap: 20px;
+    }
+
+    .footer-item__link {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .footer__social {
+        margin: 40px auto 0;
+    }
+
+    .footer__social-item svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer__copyright {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .footer__privacy {
+        font-size: 12px;
+        font-weight: 500;
     }
 }
