@@ -1,0 +1,18 @@
+/* PC breakpoint */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+}
+
+/* Tablet & mobile breakpoint */
+@media screen and (max-width: 991px) {
+
+}
+
+/* Tablet breakpoint */
+@media screen and (min-width: 768px) and (max-width: 991px){
+    
+}
+/* Mobile breakpoint */
+@media screen and (max-width: )

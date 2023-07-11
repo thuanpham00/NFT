@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NFT Marketplace</title>
+        <!-- reset css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/3115b3f4f1.js"></script>
+
+        <!-- embed font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- style css -->
+        <link rel="stylesheet" href="./assets/css/home.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+    </head>
+    <body>
+        <!-- PC header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- tablet/mobile -->
+                    <label for="menu-checkbox" class="toggle-menu"
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentcolor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            /></svg
+                    ></label>
+
+                    <!-- logo -->
+                    <figure>
+                        <img
+                            src="./assets/img/image 27 (Traced).png"
+                            alt="Meecats"
+                            class="logo"
+                        />
+                    </figure>
+
+                    <!-- form -->
+                    <form
+                        action=""
+                        method="post"
+                        autocomplete="off"
+                        class="form__search"
+                    >
+                        <label for="form__label" class="form__label">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                        <input
+                            required
+                            type="text"
+                            class="form__input"
+                            id="form__input"
+                            placeholder="Search for artworks, collections, artists ets"
+                        />
+                    </form>
+
+                    <!-- Navigation -->
+                    <nav class="navbar">
+                        <ul class="navbar__list" id="navPC">
+                            <!-- item 1 -->
+                            <li class="navbar-item">
+                                <a class="navbar-item__link" href="#!">Home</a>
+                                <span class="navbar-item__icon">
+                                    <svg
+                                        width="27"
+                                        height="27"
+                                        viewBox="0 0 27 27"
+                                        fill="currentcolor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M17.2969 12.2344L13.5 16.4531L9.70312 12.2344"
+                                            stroke="white"
+                                            stroke-width="1.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </span>
+                            </li>
+                            <!-- item 2 -->
+                            <li class="navbar-item">
+                                <a class="navbar-item__link" href="#!"
+                                    >Explore
+                                </a>
+                                <span class="navbar-item__icon">
+                                    <svg
+                                        width="27"
+                                        height="27"
+                                        viewBox="0 0 27 27"
+                                        fill="currentcolor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M17.2969 12.2344L13.5 16.4531L9.70312 12.2344"
+                                            stroke="white"
+                                            stroke-width="1.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </span>
+                                <ul class="explore">
+                                    <li class="explore-item">
+                                        <span class="explore-item__icon">
+                                            <svg
+                                                width="14"
+                                                height="13"
+                                                viewBox="0 0 14 13"
+                                                fill="white"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M11.9289 1.01178H8.89148C8.56093 1.01178 8.29297 1.27974 8.29297 1.61029V4.64549C8.29297 4.97604 8.56093 5.244 8.89148 5.244H11.9289C12.2595 5.244 12.5274 4.97604 12.5274 4.64549V1.61029C12.5274 1.27974 12.2595 1.01178 11.9289 1.01178Z"
+                                                    stroke="white"
+                                                    stroke-width="1.17"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M11.9289 7.78369H8.89148C8.56093 7.78369 8.29297 8.05165 8.29297 8.3822V11.4174C8.29297 11.7479 8.56093 12.0159 8.89148 12.0159H11.9289C12.2595 12.0159 12.5274 11.7479 12.5274 11.4174V8.3822C12.5274 8.05165 12.2595 7.78369 11.9289 7.78369Z"
+                                                    stroke="white"
+                                                    stroke-width="1.17"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M5.16232 1.00696H2.12488C1.79433 1.00696 1.52637 1.27492 1.52637 1.60547V4.64067C1.52637 4.97121 1.79433 5.23918 2.12488 5.23918H5.16232C5.49287 5.23918 5.76083 4.97121 5.76083 4.64067V1.60547C5.76083 1.27492 5.49287 1.00696 5.16232 1.00696Z"
+                                                    stroke="white"
+                                                    stroke-width="1.17"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M5.1633 7.77893H2.12585C1.79531 7.77893 1.52734 8.04689 1.52734 8.37744V11.4126C1.52734 11.7432 1.79531 12.0111 2.12585 12.0111H5.1633C5.49384 12.0111 5.76181 11.7432 5.76181 11.4126V8.37744C5.76181 8.04689 5.49384 7.77893 5.1633 7.77893Z"
+                                                    stroke="white"
+                                                    stroke-width="1.17"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <a
+                                            class="explore-item__link"
+                                            href="./src/explore/collections.html"
+                                            >Collection
+                                        </a>
+                                    </li>
+                                    <li class="explore-item">
+                                        <span class="explore-item__icon">
+                                            <svg
+                                                width="12"
+                                                height="14"
+                                                viewBox="0 0 12 14"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M1 5.78125V8.59375"
+                                                    stroke="white"
+                                                    stroke-width="1.17"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M10.5625 1H7.1875C6.87684 1 6.625 1.25184 6.625 1.5625V4.9375C6.625 5.24816 6.87684 5.5 7.1875 5.5H10.5625C10.8732 5.5 11.125 5.24816 11.125 4.9375V1.5625C11.125 1.25184 10.8732 1 10.5625 1Z"
+                                                    stroke="white"
+                                                    stroke-width="1.17"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M10.5625 8.875H7.1875C6.87684 8.875 6.625 9.12684 6.625 9.4375V12.8125C6.625 13.1232 6.87684 13.375 7.1875 13.375H10.5625C10.8732 13.375 11.125 13.1232 11.125 12.8125V9.4375C11.125 9.12684 10.8732 8.875 10.5625 8.875Z"
+                                                    stroke="white"
+                                                    stroke-width="1.17"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M1 7.1875H3.8125"
+                                                    stroke="white"
+                                                    stroke-width="1.17"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M6.62501 11.125H5.50001C5.27815 11.1259 5.05829 11.0829 4.85314 10.9985C4.64798 10.914 4.46158 10.7897 4.3047 10.6328C4.14781 10.4759 4.02355 10.2895 3.93907 10.0844C3.8546 9.87924 3.81158 9.65938 3.81251 9.43752V4.93751C3.81158 4.71565 3.8546 4.49579 3.93907 4.29064C4.02355 4.08548 4.14781 3.89908 4.3047 3.7422C4.46158 3.58531 4.64798 3.46105 4.85314 3.37657C5.05829 3.2921 5.27815 3.24908 5.50001 3.25001H6.62501"
+                                                    stroke="white"
+                                                    stroke-width="1.17"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <a
+                                            class="explore-item__link"
+                                            href="./src/explore/artworks.html"
+                                            >Artworks
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- item 3 -->
+                            <li class="navbar-item">
+                                <a class="navbar-item__link" href="#!"
+                                    >Community
+                                </a>
+                                <span class="navbar-item__icon">
+                                    <svg
+                                        width="27"
+                                        height="27"
+                                        viewBox="0 0 27 27"
+                                        fill="currentcolor"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M17.2969 12.2344L13.5 16.4531L9.70312 12.2344"
+                                            stroke="white"
+                                            stroke-width="1.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="show-on-mobile separate">
+                                <a href="#!" class="connect">Connect</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- action -->
+                    <a href="#!" class="btn header__btn">Connect</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- tablet/mobile header -->
+        <header class="mobile-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <!-- overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <!-- menu-content -->
+            <div class="menu-drawer">
+                <!-- logo -->
+                <div class="name">
+                    <a href="#!">
+                        <img src="./assets/img/artist3.png" alt="Meecats" />
+                    </a>
+                    <span class="name__thuan">Pham Thuan</span>
+                </div>
+
+                <!-- form -->
+                <form
+                    action=""
+                    method="post"
+                    autocomplete="off"
+                    class="form__search"
+                >
+                    <label for="form__label" class="form__label">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <input
+                        required
+                        type="text"
+                        class="form__input"
+                        id="form__input"
+                        placeholder="Search for artworks, collections, artists ets"
+                    />
+                </form>
+
+                <!-- navigation -->
+                <ul id="navMobile"></ul>
+
+                <script>
+                    const pcNav = document.querySelector("#navPC");
+                    const mobileNav = document.querySelector("#navMobile");
+
+                    <!-- copy form pc-nav to mobile-nav -->
+                    mobileNav.innerHTML = pcNav.innerHTML;
+                </script>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-wrap">
+                <div class="container">
+                    <div class="hero__content">
+                        <h1 class="hero__heading">Explore Virtual Worlds</h1>
+                        <p class="hero__desc">
+                            Virtual worlds are blockchain-fueled alternative
+                            realities where users can create and trade digital
+                            goods, play games, and display NFTs in galleries,
+                            among other intriguing use cases.
+                        </p>
+                        <div class="hero__btn">
+                            <a href="#!" class="hero__link btn">Explore Now</a>
+                        </div>
+                        <img
+                            src="./assets/img/hero_icon1.png"
+                            alt="hero"
+                            class="hero__icon icon-1"
+                        />
+                        <img
+                            src="./assets/img/hero_icon2.png"
+                            alt="hero"
+                            class="hero__icon icon-2"
+                        />
+                        <img
+                            src="./assets/img/hero_icon3.png"
+                            alt="hero"
+                            class="hero__icon icon-3"
+                        />
+                    </div>
+
+                    <div class="hero__media">
+                        <!-- card 1 -->
+                        <div class="hero__card hero__card--left">
+                            <img
+                                src="./assets/img/hero1.png"
+                                alt=""
+                                class="hero__img"
+                            />
+                            <div class="hero__body">
+                                <div class="hero__title">
+                                    Alternate Medium Space
+                                </div>
+                                <div class="hero__row">
+                                    <div class="hero__arkwork">Arkwork</div>
+                                    <div class="hero__total">Total Sale</div>
+                                </div>
+                                <div class="hero__row hero__row--2">
+                                    <div class="hero__index">12</div>
+                                    <div class="hero__eth">0.6 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="hero__card hero__card--center">
+                            <img
+                                src="./assets/img/hero2.png"
+                                alt=""
+                                class="hero__img hero__img--center"
+                            />
+                            <div class="hero__body">
+                                <div class="hero__title">
+                                    Alternate Medium Space
+                                </div>
+                                <div class="hero__row">
+                                    <div class="hero__arkwork">Arkwork</div>
+                                    <div class="hero__total">Total Sale</div>
+                                </div>
+                                <div class="hero__row hero__row--2">
+                                    <div class="hero__index">12</div>
+                                    <div class="hero__eth">0.6 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+                        <div class="hero__card hero__card--right">
+                            <img
+                                src="./assets/img/hero3.png"
+                                alt=""
+                                class="hero__img"
+                            />
+                            <div class="hero__body">
+                                <div class="hero__title">
+                                    Alternate Medium Space
+                                </div>
+                                <div class="hero__row">
+                                    <div class="hero__arkwork">Arkwork</div>
+                                    <div class="hero__total">Total Sale</div>
+                                </div>
+                                <div class="hero__row hero__row--2">
+                                    <div class="hero__index">12</div>
+                                    <div class="hero__eth">0.6 ETH</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="collection">
+                <div class="container">
+                    <div class="collection__row">
+                        <h2 class="collection__heading section--heading">
+                            Top collections over last 7 days
+                        </h2>
+                        <a href="#!" class="collection__link">View all</a>
+                    </div>
+
+                    <div class="collection__list">
+                        <!-- item 1 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">1</div>
+                            <img
+                                src="./assets/img/collection1.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    BoredApe
+                                </div>
+                                <div class="collection-item__coin">
+                                    $45,630,657
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">2</div>
+                            <img
+                                src="./assets/img/collection2.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    The Rebeis
+                                </div>
+                                <div class="collection-item__coin">
+                                    $32,258,741
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">3</div>
+                            <img
+                                src="./assets/img/collection3.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    Clone X
+                                </div>
+                                <div class="collection-item__coin">
+                                    $40,457,365
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 4 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">4</div>
+                            <img
+                                src="./assets/img/collection4.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    CryptoSkulls
+                                </div>
+                                <div class="collection-item__coin">
+                                    $214,630,657
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 5 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">5</div>
+                            <img
+                                src="./assets/img/collection5.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    IreneDAO
+                                </div>
+                                <div class="collection-item__coin">
+                                    $75,850,120
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 6 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">6</div>
+                            <img
+                                src="./assets/img/collection6.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    Lil Heroes
+                                </div>
+                                <div class="collection-item__coin">
+                                    $45,630,657
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 7 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">7</div>
+                            <img
+                                src="./assets/img/collection7.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    BoredApe Yecht
+                                </div>
+                                <div class="collection-item__coin">
+                                    $45,630,657
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 8 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">8</div>
+                            <img
+                                src="./assets/img/collection8.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    Phantabear
+                                </div>
+                                <div class="collection-item__coin">
+                                    $24,57,441
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 9 -->
+                        <div class="collection-item">
+                            <div class="collection-item__stt">9</div>
+                            <img
+                                src="./assets/img/collection9.png"
+                                alt=""
+                                class="collection-item__avatar"
+                            />
+                            <div class="collection-item__info">
+                                <div class="collection-item__title">
+                                    Fomo Mofos
+                                </div>
+                                <div class="collection-item__coin">
+                                    $45,204,657
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="artwork">
+                <div class="container">
+                    <div class="artwork__row">
+                        <h2 class="artwork__heading section--heading">
+                            Latest artworks with most valued bids
+                        </h2>
+                        <div class="artwork__info">
+                            <span class="artwork__title">NFTs</span>
+                            <span class="artwork__desc">Description</span>
+                        </div>
+                    </div>
+                    <div class="artwork__list">
+                        <!-- item 1 -->
+                        <article class="artwork-item">
+                            <figure>
+                                <img
+                                    src="./assets/img/artworks1.png"
+                                    alt=""
+                                    class="artwork-item__img"
+                                />
+                            </figure>
+                            <div class="artwork-item__search">
+                                <div class="search__info">Total Sale</div>
+                                <div class="search__info">0.6 ETH</div>
+                            </div>
+                            <div class="artwork-item__body">
+                                <h3 class="artwork-item__title">
+                                    ALTERNATE MEDIUM SPACE
+                                </h3>
+                                <div class="artwork-item__row">
+                                    <span class="artwork-item__desc">
+                                        Collected by (5)
+                                    </span>
+                                    <span class="artwork-item__current">
+                                        Current Bid
+                                    </span>
+                                </div>
+                                <div class="artwork-item__row--bottom">
+                                    <div class="avatar-group">
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork2.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork3.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork1.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork1.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                    </div>
+                                    <span class="avatar-item__coin"
+                                        >16.0 ETH</span
+                                    >
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- item 2 -->
+                        <article class="artwork-item">
+                            <figure>
+                                <img
+                                    src="./assets/img/artworks2.png"
+                                    alt=""
+                                    class="artwork-item__img"
+                                />
+                            </figure>
+                            <div class="artwork-item__search">
+                                <div class="search__info">Total Sale</div>
+                                <div class="search__info">0.6 ETH</div>
+                            </div>
+                            <div class="artwork-item__body">
+                                <h3 class="artwork-item__title">
+                                    ALTERNATE MEDIUM SPACE
+                                </h3>
+                                <div class="artwork-item__row">
+                                    <span class="artwork-item__desc">
+                                        Collected by (5)
+                                    </span>
+                                    <span class="artwork-item__current">
+                                        Current Bid
+                                    </span>
+                                </div>
+                                <div class="artwork-item__row--bottom">
+                                    <div class="avatar-group">
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork2.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork3.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork1.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork1.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                    </div>
+                                    <span class="avatar-item__coin"
+                                        >16.0 ETH</span
+                                    >
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- item 3 -->
+                        <article class="artwork-item">
+                            <figure>
+                                <img
+                                    src="./assets/img/artworks3.png"
+                                    alt=""
+                                    class="artwork-item__img"
+                                />
+                            </figure>
+                            <div class="artwork-item__search">
+                                <div class="search__info">Total Sale</div>
+                                <div class="search__info">0.6 ETH</div>
+                            </div>
+                            <div class="artwork-item__body">
+                                <h3 class="artwork-item__title">
+                                    ALTERNATE MEDIUM SPACE
+                                </h3>
+                                <div class="artwork-item__row">
+                                    <span class="artwork-item__desc">
+                                        Collected by (5)
+                                    </span>
+                                    <span class="artwork-item__current">
+                                        Current Bid
+                                    </span>
+                                </div>
+                                <div class="artwork-item__row--bottom">
+                                    <div class="avatar-group">
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork2.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork3.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork1.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork1.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                    </div>
+                                    <span class="avatar-item__coin"
+                                        >16.0 ETH</span
+                                    >
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="artwork__icon">
+                        <svg
+                            width="82"
+                            height="16"
+                            viewBox="0 0 82 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M51 7C50.4477 7 50 7.44772 50 8C50 8.55228 50.4477 9 51 9L51 7ZM81.7071 8.70711C82.0976 8.31659 82.0976 7.68342 81.7071 7.2929L75.3431 0.928934C74.9526 0.53841 74.3195 0.53841 73.9289 0.928934C73.5384 1.31946 73.5384 1.95262 73.9289 2.34315L79.5858 8L73.9289 13.6569C73.5384 14.0474 73.5384 14.6805 73.9289 15.0711C74.3195 15.4616 74.9526 15.4616 75.3431 15.0711L81.7071 8.70711ZM51 9L81 9L81 7L51 7L51 9Z"
+                                fill="white"
+                            />
+                            <path
+                                opacity="0.5"
+                                d="M31 9C31.5523 9 32 8.55228 32 8C32 7.44772 31.5523 7 31 7L31 9ZM0.292893 7.29289C-0.0976314 7.68341 -0.0976315 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.92893C7.68054 0.538406 7.04738 0.538406 6.65686 0.92893L0.292893 7.29289ZM31 7L1 7L1 9L31 9L31 7Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <section class="discover">
+                <div class="container">
+                    <h2 class="discover__heading section--heading">
+                        Discover more NFT
+                    </h2>
+                    <div class="discover-row">
+                        <div class="discover-box">
+                            <ul class="discover__list">
+                                <li class="discover__item">
+                                    <a href="#!" class="discover__link"
+                                        >Categories</a
+                                    >
+                                </li>
+                                <li class="discover__item">
+                                    <a href="#!" class="discover__link"
+                                        >Status</a
+                                    >
+                                </li>
+                                <li class="discover__item">
+                                    <a href="#!" class="discover__link"
+                                        >Price Range</a
+                                    >
+                                </li>
+                                <li class="discover__item">
+                                    <a href="#!" class="discover__link"
+                                        >Filter</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#!" class="discover__link-more">View all</a>
+                    </div>
+
+                    <div class="discover-card__list">
+                        <!-- item 1 -->
+                        <div class="discover-card__item">
+                            <figure>
+                                <img
+                                    src="./assets/img/discover1.png"
+                                    alt=""
+                                    class="discover-card__thumb"
+                                />
+                            </figure>
+                            <div class="discover-card__body">
+                                <h3 class="discover-card__title">
+                                    ALTERNATE MEDIUM SPACE
+                                </h3>
+                                <div class="discover-card__row">
+                                    <span class="discover-card__desc"
+                                        >Arkwork
+                                    </span>
+                                    <span class="discover-card__desc"
+                                        >Total Sale
+                                    </span>
+                                    <span class="discover-card__desc"
+                                        >Collection (5)
+                                    </span>
+                                </div>
+                                <div
+                                    class="discover-card__row discover-card__row--bottom"
+                                >
+                                    <span class="discover-card__info">12</span>
+                                    <span class="discover-card__info"
+                                        >0.6 ETH
+                                    </span>
+                                    <div class="avatar-group">
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork2.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork3.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork1.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork1.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item 2 -->
+                        <div class="discover-card__item">
+                            <figure>
+                                <img
+                                    src="./assets/img/discover2.png"
+                                    alt=""
+                                    class="discover-card__thumb"
+                                />
+                            </figure>
+                            <div class="discover-card__body">
+                                <h3 class="discover-card__title">
+                                    ALTERNATE MEDIUM SPACE
+                                </h3>
+                                <div class="discover-card__row">
+                                    <span class="discover-card__desc"
+                                        >Arkwork</span
+                                    >
+                                    <span class="discover-card__desc"
+                                        >Total Sale</span
+                                    >
+                                    <span class="discover-card__desc"
+                                        >Collection (5)</span
+                                    >
+                                </div>
+                                <div
+                                    class="discover-card__row discover-card__row--bottom"
+                                >
+                                    <span class="discover-card__info">12</span>
+                                    <span class="discover-card__info"
+                                        >0.6 ETH
+                                    </span>
+                                    <div class="avatar-group">
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork2.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork3.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork1.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork1.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item 3 -->
+                        <div class="discover-card__item">
+                            <figure>
+                                <img
+                                    src="./assets/img/discover3.png"
+                                    alt=""
+                                    class="discover-card__thumb"
+                                />
+                            </figure>
+                            <div class="discover-card__body">
+                                <h3 class="discover-card__title">
+                                    ALTERNATE MEDIUM SPACE
+                                </h3>
+                                <div class="discover-card__row">
+                                    <span class="discover-card__desc"
+                                        >Arkwork</span
+                                    >
+                                    <span class="discover-card__desc"
+                                        >Total Sale</span
+                                    >
+                                    <span class="discover-card__desc"
+                                        >Collection (5)</span
+                                    >
+                                </div>
+                                <div
+                                    class="discover-card__row discover-card__row--bottom"
+                                >
+                                    <span class="discover-card__info">12</span>
+                                    <span class="discover-card__info"
+                                        >0.6 ETH
+                                    </span>
+                                    <div class="avatar-group">
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork2.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork3.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork1.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork1.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- item 4 -->
+                        <div class="discover-card__item">
+                            <figure>
+                                <img
+                                    src="./assets/img/discover4.png"
+                                    alt=""
+                                    class="discover-card__thumb"
+                                />
+                            </figure>
+                            <div class="discover-card__body">
+                                <h3 class="discover-card__title">
+                                    ALTERNATE MEDIUM SPACE
+                                </h3>
+                                <div class="discover-card__row">
+                                    <span class="discover-card__desc"
+                                        >Arkwork</span
+                                    >
+                                    <span class="discover-card__desc"
+                                        >Total Sale</span
+                                    >
+                                    <span class="discover-card__desc"
+                                        >Collection (5)</span
+                                    >
+                                </div>
+                                <div
+                                    class="discover-card__row discover-card__row--bottom"
+                                >
+                                    <span class="discover-card__info">12</span>
+                                    <span class="discover-card__info"
+                                        >0.6 ETH
+                                    </span>
+                                    <div class="avatar-group">
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork2.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork3.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork1.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                        <div class="avatar-item">
+                                            <img
+                                                src="./assets/icon/artwork1.png"
+                                                alt=""
+                                                class="avatar-item__icon"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="artist">
+                <div class="container">
+                    <h2 class="artist__heading section--heading">
+                        Our Top Artist
+                    </h2>
+                    <p class="artist__desc">
+                        NFT's are transforming the way commerce is transacted,
+                        contracts are enforced investme are held, and value is
+                        transferred every tree in the forest knows
+                    </p>
+                    <div class="artist__list">
+                        <!-- item 1 -->
+                        <article class="artist-item">
+                            <div class="artist-item__thumb">
+                                <img
+                                    src="./assets/img/bg1_artist.png"
+                                    alt=""
+                                    class="artist-item__img"
+                                />
+                            </div>
+                            <div class="artist-item__body">
+                                <figure class="artist-item__icon">
+                                    <img
+                                        src="./assets/img/artist1.png"
+                                        alt=""
+                                        class="artist-item__avatar"
+                                    />
+                                </figure>
+                                <div class="artist-item__title">
+                                    Jane Cooper
+                                </div>
+                                <p class="artist-item__desc">
+                                    NFT's are transform the way commerce things.
+                                </p>
+                                <a href="#!" class="artist-item__link"
+                                    >Follow</a
+                                >
+                            </div>
+                        </article>
+                        <!-- item 2 -->
+                        <article class="artist-item">
+                            <div class="artist-item__thumb">
+                                <img
+                                    src="./assets/img/bg2_artist.png"
+                                    alt=""
+                                    class="artist-item__img"
+                                />
+                            </div>
+                            <div class="artist-item__body">
+                                <figure class="artist-item__icon">
+                                    <img
+                                        src="./assets/img/artist2.png"
+                                        alt=""
+                                        class="artist-item__avatar"
+                                    />
+                                </figure>
+                                <div class="artist-item__title">
+                                    Jane Cooper
+                                </div>
+                                <p class="artist-item__desc">
+                                    NFT's are transform the way commerce things.
+                                </p>
+                                <a href="#!" class="artist-item__link"
+                                    >Follow</a
+                                >
+                            </div>
+                        </article>
+                        <!-- item 3 -->
+                        <article class="artist-item">
+                            <div class="artist-item__thumb">
+                                <img
+                                    src="./assets/img/bg3_artist.png"
+                                    alt=""
+                                    class="artist-item__img"
+                                />
+                            </div>
+                            <div class="artist-item__body">
+                                <figure class="artist-item__icon">
+                                    <img
+                                        src="./assets/img/artist3.png   "
+                                        alt=""
+                                        class="artist-item__avatar"
+                                    />
+                                </figure>
+                                <div class="artist-item__title">
+                                    Jane Cooper
+                                </div>
+                                <p class="artist-item__desc">
+                                    NFT's are transform the way commerce things.
+                                </p>
+                                <a href="#!" class="artist-item__link"
+                                    >Follow</a
+                                >
+                            </div>
+                        </article>
+                        <!-- item 4 -->
+                        <article class="artist-item">
+                            <div class="artist-item__thumb">
+                                <img
+                                    src="./assets/img/bg4_artist.png"
+                                    alt=""
+                                    class="artist-item__img"
+                                />
+                            </div>
+                            <div class="artist-item__body">
+                                <figure class="artist-item__icon">
+                                    <img
+                                        src="./assets/img/artist4.png"
+                                        alt=""
+                                        class="artist-item__avatar"
+                                    />
+                                </figure>
+                                <div class="artist-item__title">
+                                    Jane Cooper
+                                </div>
+                                <p class="artist-item__desc">
+                                    NFT's are transform the way commerce things.
+                                </p>
+                                <a href="#!" class="artist-item__link"
+                                    >Follow</a
+                                >
+                            </div>
+                        </article>
+                        <!-- item 5 -->
+                        <article class="artist-item">
+                            <div class="artist-item__thumb">
+                                <img
+                                    src="./assets/img/bg5_artist.png"
+                                    alt=""
+                                    class="artist-item__img"
+                                />
+                            </div>
+                            <div class="artist-item__body">
+                                <figure class="artist-item__icon">
+                                    <img
+                                        src="./assets/img/artist5.png"
+                                        alt=""
+                                        class="artist-item__avatar"
+                                    />
+                                </figure>
+                                <div class="artist-item__title">
+                                    Jane Cooper
+                                </div>
+                                <p class="artist-item__desc">
+                                    NFT's are transform the way commerce things.
+                                </p>
+                                <a href="#!" class="artist-item__link"
+                                    >Follow</a
+                                >
+                            </div>
+                        </article>
+                        <!-- item 6 -->
+                        <article class="artist-item">
+                            <div class="artist-item__thumb">
+                                <img
+                                    src="./assets/img/bg6_artist.png"
+                                    alt=""
+                                    class="artist-item__img"
+                                />
+                            </div>
+                            <div class="artist-item__body">
+                                <figure class="artist-item__icon">
+                                    <img
+                                        src="./assets/img/artist6.png"
+                                        alt=""
+                                        class="artist-item__avatar"
+                                    />
+                                </figure>
+                                <div class="artist-item__title">
+                                    Jane Cooper
+                                </div>
+                                <p class="artist-item__desc">
+                                    NFT's are transform the way commerce things.
+                                </p>
+                                <a href="#!" class="artist-item__link"
+                                    >Follow</a
+                                >
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="news">
+                <div class="container">
+                    <h2 class="section--heading">Latest Meecats News</h2>
+                    <div class="news__inner">
+                        <section class="news-media">
+                            <figure>
+                                <img
+                                    src="./assets/img/news_thumb.png"
+                                    alt=""
+                                    class="news-media__thumb"
+                                />
+                            </figure>
+                            <div class="news-media__body">
+                                <p class="news-media__desc">
+                                    @Doruk Kumkumoğlu
+                                </p>
+                                <h3 class="news-media__title">
+                                    NFT Gaming is LIVE on Efinity With My Meta
+                                    verse’s Suite of Games
+                                </h3>
+                                <div class="news-media__row">
+                                    <a href="#!" class="news-media__link btn"
+                                        >News</a
+                                    >
+                                    <span class="date">September 15, 2022</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="news-content">
+                            <!-- item 1 -->
+                            <article class="news-content__item">
+                                <p class="news-content__desc">
+                                    @Doruk Kumkumoğlu
+                                </p>
+                                <h3 class="news-content__title">
+                                    Enjin Roadmap Update September 2022
+                                </h3>
+                                <div class="news-content__row">
+                                    <a href="#!" class="news-content__link btn"
+                                        >News</a
+                                    >
+                                    <span class="date">September 15, 2022</span>
+                                </div>
+                            </article>
+                            <!-- item 2 -->
+                            <article class="news-content__item">
+                                <p class="news-content__desc">
+                                    @Doruk Kumkumoğlu
+                                </p>
+                                <h3 class="news-content__title">
+                                    BeInCrypto Covers the Greenest Efinity
+                                </h3>
+                                <div class="news-content__row">
+                                    <a href="#!" class="news-content__link btn"
+                                        >News</a
+                                    >
+                                    <span class="date">September 15, 2022</span>
+                                </div>
+                            </article>
+                            <!-- item 3 -->
+                            <article class="news-content__item">
+                                <p class="news-content__desc">
+                                    @Doruk Kumkumoğlu
+                                </p>
+                                <h3 class="news-content__title">
+                                    Greenest Blockchains, Starting 2022
+                                </h3>
+                                <div class="news-content__row">
+                                    <a href="#!" class="news-content__link btn"
+                                        >News</a
+                                    >
+                                    <span class="date">September 15, 2022</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="container">
+                    <h2 class="about__heading section--heading">
+                        What people are saying about Meecats
+                    </h2>
+                    <div class="about__list">
+                        <div class="about__column">
+                            <!-- item 1 -->
+                            <article class="about-item">
+                                <div class="about-item__info">
+                                    <img
+                                        src="./assets/img/collection1.png"
+                                        alt=""
+                                        class="about-item__thumb"
+                                    />
+                                    <div class="about-item__row">
+                                        <h3 class="about-item__title">
+                                            Philip Colbert
+                                        </h3>
+                                        <p class="about-item__desc">
+                                            The Lobstars
+                                        </p>
+                                    </div>
+                                </div>
+                                <p
+                                    class="about-item__desc--bottom about-item__desc"
+                                >
+                                    I find the Bueno Generator really inspiring
+                                    creatively.
+                                </p>
+                            </article>
+                            <!-- item 2 -->
+                            <article class="about-item">
+                                <div class="about-item__info">
+                                    <img
+                                        src="./assets/img/collection7.png"
+                                        alt=""
+                                        class="about-item__thumb"
+                                    />
+                                    <div class="about-item__row">
+                                        <h3 class="about-item__title">
+                                            Robart Foden
+                                        </h3>
+                                        <p class="about-item__desc">
+                                            The Lobstars
+                                        </p>
+                                    </div>
+                                </div>
+                                <p
+                                    class="about-item__desc--bottom about-item__desc"
+                                >
+                                    "We are strong believers in the potential of
+                                    NFTs and are confident the Enjin team will
+                                    play a key role in developing the
+                                    infrastructure required to meet that
+                                    potential."
+                                </p>
+                            </article>
+                        </div>
+                        <div class="about__column">
+                            <!-- item 3 -->
+                            <article class="about-item">
+                                <div class="about-item__info">
+                                    <img
+                                        src="./assets/img/collection5.png"
+                                        alt=""
+                                        class="about-item__thumb"
+                                    />
+                                    <div class="about-item__row">
+                                        <h3 class="about-item__title">
+                                            Robart Foden
+                                        </h3>
+                                        <p class="about-item__desc">
+                                            The Lobstars
+                                        </p>
+                                    </div>
+                                </div>
+                                <p
+                                    class="about-item__desc--bottom about-item__desc"
+                                >
+                                    "We are strong believers in the potential of
+                                    NFTs and are confident the Enjin team will
+                                    play a key role in developing the
+                                    infrastructure required to meet that
+                                    potential."
+                                </p>
+                            </article>
+                            <!-- item 4 -->
+                            <article class="about-item">
+                                <div class="about-item__info">
+                                    <img
+                                        src="./assets/img/collection9.png"
+                                        alt=""
+                                        class="about-item__thumb"
+                                    />
+                                    <div class="about-item__row">
+                                        <h3 class="about-item__title">
+                                            Philip Colbert
+                                        </h3>
+                                        <p class="about-item__desc">
+                                            The Lobstars
+                                        </p>
+                                    </div>
+                                </div>
+                                <p
+                                    class="about-item__desc--bottom about-item__desc"
+                                >
+                                    "The services offered by Efinity are a clear
+                                    example of a much needed upgrade to a whole
+                                    industry."
+                                </p>
+                            </article>
+                        </div>
+                        <div class="about__column">
+                            <!-- item 5 -->
+                            <article class="about-item">
+                                <div class="about-item__info">
+                                    <img
+                                        src="./assets/img/collection3.png"
+                                        alt=""
+                                        class="about-item__thumb"
+                                    />
+                                    <div class="about-item__row">
+                                        <h3 class="about-item__title">
+                                            Philip Colbert
+                                        </h3>
+                                        <p class="about-item__desc">
+                                            The Lobstars
+                                        </p>
+                                    </div>
+                                </div>
+                                <p
+                                    class="about-item__desc--bottom about-item__desc"
+                                >
+                                    "The services offered by Efinity are a clear
+                                    example of a much needed upgrade to a whole
+                                    industry."
+                                </p>
+                            </article>
+
+                            <!-- item 6 -->
+                            <article class="about-item">
+                                <div class="about-item__info">
+                                    <img
+                                        src="./assets/img/collection6.png"
+                                        alt=""
+                                        class="about-item__thumb"
+                                    />
+                                    <div class="about-item__row">
+                                        <h3 class="about-item__title">
+                                            Philip Colbert
+                                        </h3>
+                                        <p class="about-item__desc">
+                                            The Lobstars
+                                        </p>
+                                    </div>
+                                </div>
+                                <p
+                                    class="about-item__desc--bottom about-item__desc"
+                                >
+                                    I find the Bueno Generator really inspiring
+                                    creatively.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="about__link">
+                            <a href="#!" class="btn about__btn">View all</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subscribe">
+                <div class="container">
+                    <section class="subscribe__inner">
+                        <h2 class="subscribe__heading section--heading">
+                            Subscribe Our Letest Newslaters
+                        </h2>
+                        <p class="subscribe__desc">
+                            Stay Up To Date On New Releases, Interviews, Events,
+                            And Updates From Foundation's Community.
+                        </p>
+                        <form
+                            action=""
+                            class="subscribe__form"
+                            method="post"
+                            autocomplete="off"
+                        >
+                            <input
+                                class="subscribe__input"
+                                type="email"
+                                placeholder="Enter your email"
+                                required
+                            />
+                            <button class="subscribe__submit" type="submit">
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M5 16H27"
+                                        stroke="black"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M18 7L27 16L18 25"
+                                        stroke="black"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </form>
+                        <img
+                            src="./assets/img/hero_icon2.png"
+                            alt=""
+                            class="subscribe__decor decor1"
+                        />
+                        <img
+                            src="./assets/img/hero_icon1.png"
+                            alt=""
+                            class="subscribe__decor decor2"
+                        />
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row--1">
+                    <figure>
+                        <img
+                            src="./assets/img/image 27 (Traced).png"
+                            alt=""
+                            class="footer__logo"
+                        />
+                    </figure>
+                    <ul class="footer__list">
+                        <li class="footer-item">
+                            <a href="#!" class="footer-item__link">Explore</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#!" class="footer-item__link">Community</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#!" class="footer-item__link">Drops</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__social">
+                        <li class="footer__social-item">
+                            <svg
+                                width="24"
+                                height="25"
+                                viewBox="0 0 24 25"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g id="Facebook">
+                                    <path
+                                        id="Vector"
+                                        d="M16.5 6.5H13.5C12.9477 6.5 12.5 6.94772 12.5 7.5V10.5H16.5C16.6137 10.4975 16.7216 10.5504 16.7892 10.6419C16.8568 10.7334 16.8758 10.852 16.84 10.96L16.1 13.16C16.0318 13.3619 15.8431 13.4984 15.63 13.5H12.5V21C12.5 21.2761 12.2761 21.5 12 21.5H9.5C9.22386 21.5 9 21.2761 9 21V13.5H7.5C7.22386 13.5 7 13.2761 7 13V11C7 10.7239 7.22386 10.5 7.5 10.5H9V7.5C9 5.29086 10.7909 3.5 13 3.5H16.5C16.7761 3.5 17 3.72386 17 4V6C17 6.27614 16.7761 6.5 16.5 6.5Z"
+                                        fill="white"
+                                    />
+                                </g>
+                            </svg>
+                        </li>
+                        <li class="footer__social-item">
+                            <svg
+                                width="24"
+                                height="25"
+                                viewBox="0 0 24 25"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M16 3.5H8C5.23858 3.5 3 5.73858 3 8.5V16.5C3 19.2614 5.23858 21.5 8 21.5H16C18.7614 21.5 21 19.2614 21 16.5V8.5C21 5.73858 18.7614 3.5 16 3.5ZM19.25 16.5C19.2445 18.2926 17.7926 19.7445 16 19.75H8C6.20735 19.7445 4.75549 18.2926 4.75 16.5V8.5C4.75549 6.70735 6.20735 5.25549 8 5.25H16C17.7926 5.25549 19.2445 6.70735 19.25 8.5V16.5ZM16.75 8.75C17.3023 8.75 17.75 8.30228 17.75 7.75C17.75 7.19772 17.3023 6.75 16.75 6.75C16.1977 6.75 15.75 7.19772 15.75 7.75C15.75 8.30228 16.1977 8.75 16.75 8.75ZM12 8C9.51472 8 7.5 10.0147 7.5 12.5C7.5 14.9853 9.51472 17 12 17C14.4853 17 16.5 14.9853 16.5 12.5C16.5027 11.3057 16.0294 10.1596 15.1849 9.31508C14.3404 8.47059 13.1943 7.99734 12 8ZM9.25 12.5C9.25 14.0188 10.4812 15.25 12 15.25C13.5188 15.25 14.75 14.0188 14.75 12.5C14.75 10.9812 13.5188 9.75 12 9.75C10.4812 9.75 9.25 10.9812 9.25 12.5Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </li>
+                        <li class="footer__social-item">
+                            <svg
+                                width="24"
+                                height="25"
+                                viewBox="0 0 24 25"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M20.9727 7.2174C20.5083 7.83692 19.9469 8.37733 19.3102 8.81776C19.3102 8.97959 19.3102 9.14142 19.3102 9.31225C19.3153 12.2511 18.1414 15.0691 16.0517 17.1345C13.9619 19.1999 11.1311 20.3399 8.19393 20.2989C6.49587 20.3046 4.81955 19.9169 3.2963 19.1661C3.21416 19.1302 3.16119 19.049 3.1615 18.9593V18.8604C3.1615 18.7313 3.26611 18.6267 3.39515 18.6267C5.0643 18.5716 6.6739 17.9929 7.99622 16.9724C6.48541 16.9419 5.12607 16.0469 4.50048 14.6707C4.46889 14.5956 4.47872 14.5093 4.52645 14.4432C4.57417 14.3771 4.65288 14.3407 4.73413 14.3471C5.1933 14.3932 5.65706 14.3505 6.10008 14.2212C4.43227 13.875 3.17909 12.4904 2.99974 10.7957C2.99337 10.7144 3.0298 10.6357 3.09588 10.5879C3.16195 10.5402 3.24812 10.5303 3.32326 10.562C3.77082 10.7595 4.25397 10.8635 4.74312 10.8676C3.28172 9.90846 2.65049 8.08405 3.20643 6.42622C3.26382 6.26513 3.40169 6.14612 3.56938 6.11294C3.73706 6.07975 3.90984 6.13728 4.0242 6.26439C5.99627 8.36325 8.70592 9.61396 11.5818 9.75279C11.5082 9.45885 11.472 9.15676 11.474 8.85372C11.5009 7.26472 12.4841 5.84921 13.9633 5.26987C15.4424 4.69054 17.1248 5.06203 18.2229 6.21044C18.9713 6.06785 19.6949 5.81645 20.3706 5.46421C20.4201 5.43331 20.4829 5.43331 20.5324 5.46421C20.5633 5.51373 20.5633 5.57652 20.5324 5.62604C20.2051 6.37552 19.6522 7.00412 18.9508 7.42419C19.565 7.35296 20.1684 7.20807 20.7481 6.99264C20.7969 6.95942 20.861 6.95942 20.9098 6.99264C20.9507 7.01134 20.9813 7.04711 20.9934 7.09042C21.0055 7.13373 20.9979 7.18018 20.9727 7.2174Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </li>
+                        <li class="footer__social-item">
+                            <svg
+                                width="24"
+                                height="25"
+                                viewBox="0 0 24 25"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M5 3.5H19C20.1046 3.5 21 4.39543 21 5.5V19.5C21 20.6046 20.1046 21.5 19 21.5H5C3.89543 21.5 3 20.6046 3 19.5V5.5C3 4.39543 3.89543 3.5 5 3.5ZM8 18.5C8.27614 18.5 8.5 18.2761 8.5 18V11C8.5 10.7239 8.27614 10.5 8 10.5H6.5C6.22386 10.5 6 10.7239 6 11V18C6 18.2761 6.22386 18.5 6.5 18.5H8ZM7.25 9.5C6.42157 9.5 5.75 8.82843 5.75 8C5.75 7.17157 6.42157 6.5 7.25 6.5C8.07843 6.5 8.75 7.17157 8.75 8C8.75 8.82843 8.07843 9.5 7.25 9.5ZM17.5 18.5C17.7761 18.5 18 18.2761 18 18V13.4C18.0325 11.8108 16.8576 10.4545 15.28 10.26C14.177 10.1593 13.1083 10.6744 12.5 11.6V11C12.5 10.7239 12.2761 10.5 12 10.5H10.5C10.2239 10.5 10 10.7239 10 11V18C10 18.2761 10.2239 18.5 10.5 18.5H12C12.2761 18.5 12.5 18.2761 12.5 18V14.25C12.5 13.4216 13.1716 12.75 14 12.75C14.8284 12.75 15.5 13.4216 15.5 14.25V18C15.5 18.2761 15.7239 18.5 16 18.5H17.5Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__row--2">
+                    <span class="footer__copyright"
+                        >©2022, All right reserved.</span
+                    >
+                    <div class="footer__cookie">
+                        <span class="footer__privacy">Privacy Policy</span>
+                        <span class="footer__privacy">Terms of Service</span>
+                        <span class="footer__privacy">Cookies Settings</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

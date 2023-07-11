@@ -1,0 +1,33 @@
+/* PC breakpoint */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Tablet & mobile breakpoint */
+@media screen and (max-width: 991px) {
+    .header {
+        border: none;
+    }
+
+    .header__inner {
+        position: relative;
+        align-items: center;
+    }
+}
+
+/* Tablet breakpoint */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Mobile breakpoint */
+@media screen and (max-width: 767px) {
+}
