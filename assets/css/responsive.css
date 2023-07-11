@@ -46,8 +46,11 @@
     }
 
     .name__thuan {
-        margin-left: 10px;
+        margin-left: 20px;
         font-size: 3rem;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: -1px;
     }
 
     .menu-overlay {
@@ -471,6 +474,13 @@
     .menu-drawer {
         padding: 40px;
         inset: 0 25% 0 0;
+    }
+
+    .name__thuan {
+        margin-left: 10px;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: -1px;
     }
 
     .header__inner .logo {
