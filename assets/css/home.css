@@ -985,6 +985,7 @@ a {
     height: 64px;
     border-radius: 99px;
     background: #17e3a6;
+    border: none;
 }
 
 .subscribe__decor {
