@@ -100,12 +100,10 @@
 
     .menu-drawer .clt__list {
         position: absolute;
-        bottom: -250px;
+        bottom: -300px;
     }
 
-    .menu-drawer .clt-item {
-        padding: 7px 20px;
-    }
+    .menu-drawer .clt
 
     .connect {
         margin-left: 22px;

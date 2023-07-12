@@ -98,15 +98,6 @@
         padding-bottom: 10px;
     }
 
-    .menu-drawer .clt__list {
-        position: absolute;
-        bottom: -250px;
-    }
-
-    .menu-drawer .clt-item {
-        padding: 7px 20px;
-    }
-
     .connect {
         margin-left: 22px;
         font-size: 1.8rem;

@@ -88,23 +88,14 @@
     }
 
     .menu-drawer .explore {
-        padding-top: 0;
         position: absolute;
         top: 10px;
-        right: 120px;
+        right:100px;
+       
     }
 
-    .menu-drawer .explore-item:nth-child(1) {
+    .menu-drawer .explore-item:nth-child(2) {
         padding-bottom: 10px;
-    }
-
-    .menu-drawer .clt__list {
-        position: absolute;
-        bottom: -250px;
-    }
-
-    .menu-drawer .clt-item {
-        padding: 7px 20px;
     }
 
     .connect {
