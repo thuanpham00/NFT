@@ -273,24 +273,17 @@ a {
 .NFT-item__link:hover {
     background: #17e3a6;
     color: #000;
-    font-weight: 500;
 }
 
 .NFT-card__list {
-    margin: 60px 0 150px;
+    margin-top: 60px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .NFT-card__item {
-    width: 100%;
     position: relative;
-    transition: ease 0.3s;
-}
-
-.NFT-card__item:hover {
-    transform: scale(0.9);
 }
 
 .NFT-card__thumb {
@@ -298,34 +291,31 @@ a {
 }
 
 .NFT-card__body {
-    width: 94.6%;
     position: absolute;
     bottom: 10px;
     left: 10px;
     right: 10px;
+    width: 350px;
     height: 208px;
     background: rgba(246, 246, 246, 0.2);
     backdrop-filter: blur(112.5px);
 }
 
 .NFT-card__img {
-    width: 94.3%;
     z-index: -1;
     position: absolute;
     bottom: 160px;
     left: 10px;
-    left: 10px;
 }
 
 .NFT-card__row {
-    padding: 0 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 18px;
 }
 
 .NFT-card__desc {
+    padding: 0 30px;
+    margin-top: 18px;
     color: #fff;
     font-size: 1.5rem;
     line-height: 22px;
@@ -341,73 +331,10 @@ a {
     letter-spacing: 2.5px;
 }
 
-.NFT-card__row--bottom {
-    margin-top: 0;
+.NFT-card__row:nth-child(3) .NFT-card__desc{
+    margin
 }
 
 .avatar-group {
     display: flex;
-    align-items: center;
-}
-
-.avatar-item {
-    margin-left: -10px;
-}
-
-.avatar-item:first-child {
-    margin-left: 0;
-}
-
-
-.footer {
-    background: #212127;
-    padding-top: 80px;
-}
-
-.footer__row--1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #595959;
-}
-
-.footer__list {
-    display: flex;
-    column-gap: 44px;
-}
-
-.footer-item__link {
-    color: #fdfdfd;
-    font-size: 18px;
-}
-
-.footer__social {
-    display: flex;
-    column-gap: 12px;
-}
-
-.footer__row--2 {
-    padding: 40px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__copyright {
-    color: #fff;
-    font-size: 1.4rem;
-    font-weight: 500;
-}
-
-.footer__cookie {
-    margin-left: 32px;
-}
-
-.footer__privacy {
-    margin-right: 24px;
-    color: #fff;
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-decoration-line: underline;
 }

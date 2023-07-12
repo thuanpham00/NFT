@@ -273,11 +273,11 @@ a {
 .NFT-item__link:hover {
     background: #17e3a6;
     color: #000;
-    font-weight: 500;
+    font
 }
 
 .NFT-card__list {
-    margin: 60px 0 150px;
+    margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -286,11 +286,6 @@ a {
 .NFT-card__item {
     width: 100%;
     position: relative;
-    transition: ease 0.3s;
-}
-
-.NFT-card__item:hover {
-    transform: scale(0.9);
 }
 
 .NFT-card__thumb {
@@ -356,58 +351,4 @@ a {
 
 .avatar-item:first-child {
     margin-left: 0;
-}
-
-
-.footer {
-    background: #212127;
-    padding-top: 80px;
-}
-
-.footer__row--1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #595959;
-}
-
-.footer__list {
-    display: flex;
-    column-gap: 44px;
-}
-
-.footer-item__link {
-    color: #fdfdfd;
-    font-size: 18px;
-}
-
-.footer__social {
-    display: flex;
-    column-gap: 12px;
-}
-
-.footer__row--2 {
-    padding: 40px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__copyright {
-    color: #fff;
-    font-size: 1.4rem;
-    font-weight: 500;
-}
-
-.footer__cookie {
-    margin-left: 32px;
-}
-
-.footer__privacy {
-    margin-right: 24px;
-    color: #fff;
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-decoration-line: underline;
 }
