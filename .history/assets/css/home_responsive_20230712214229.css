@@ -496,7 +496,7 @@
 /* mobile breakpoint */
 @media screen and (max-width: 767px) {
     .menu-drawer {
-        padding: 20px;
+        padding: 30px;
         inset: 0 25% 0 0;
     }
 
@@ -508,7 +508,7 @@
         padding-top: 0;
         position: absolute;
         top: 10px;
-        right: 10px;
+        right: -20px;
     }
 
     .menu-drawer .explore-item:nth-child(1) {
@@ -520,12 +520,8 @@
         bottom: -250px;
     }
 
-    .explore-item:nth-child(1) {
-        padding: 10px 15px;
-    }
-    
     .menu-drawer .clt-item {
-        padding: 7px 15px;
+        padding: 7px 20px;
     }
 
     .name__thuan {

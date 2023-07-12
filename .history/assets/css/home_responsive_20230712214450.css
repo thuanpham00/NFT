@@ -521,9 +521,8 @@
     }
 
     .explore-item:nth-child(1) {
-        padding: 10px 15px;
+        padding: 10px 0;
     }
-    
     .menu-drawer .clt-item {
         padding: 7px 15px;
     }
