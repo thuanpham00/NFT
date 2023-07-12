@@ -1,0 +1,161 @@
+/* PC breakpoint */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Tablet & mobile breakpoint */
+@media screen and (max-width: 991px) {
+    .header {
+        border: none;
+    }
+
+    .header__inner {
+        position: relative;
+        align-items: center;
+    }
+
+    .header__inner .logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .header__inner .form__search {
+        display: none;
+    }
+
+    .navbar__list {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        width: 24px;
+        color: #666;
+    }
+
+    .name {
+        display: flex;
+        align-items: center;
+    }
+
+    .name__thuan {
+        margin-left: 20px;
+        font-size: 3rem;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: -1px;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: ease 0.3s;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        padding: 40px;
+        z-index: 2;
+        transform: translateX(-100%);
+    }
+
+    .menu-drawer ul {
+        margin-top: 20px;
+    }
+
+    .menu-drawer ul a {
+        display: block;
+        color: #333;
+        padding: 14px 0;
+        font-weight: 500;
+    }
+
+    .connect {
+        margin-left: 22px;
+        font-size: 1.8rem;
+    }
+
+    .menu-drawer .form__search {
+        background: transparent;
+    }
+
+    .menu-drawer .form__label {
+        margin-left: -72px;
+    }
+
+    .menu-drawer .form__input {
+        display: none;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .separate {
+        border-top: 1.5px solid #ebebeb;
+    }
+
+    .NFT__heading {
+        text-align: left;
+        width: 335px;
+        font-size: 3.6rem;
+    }
+
+    .NFT-item__link {
+        font-size: 1.4rem;
+    }
+
+    .NFT__row {
+        flex-direction: column;
+    }
+
+}
+
+/* Tablet breakpoint */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Mobile breakpoint */
+@media screen and (max-width: 767px) {
+    .menu-drawer {
+        padding: 40px;
+        inset: 0 25% 0 0;
+    }
+
+    .name__thuan {
+        margin-left: 10px;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: -1px;
+    }
+
+    .header__inner .logo {
+        width: 51px;
+        height: 21px;
+    }
+
+    .header__btn {
+        display: none;
+    }
+}
