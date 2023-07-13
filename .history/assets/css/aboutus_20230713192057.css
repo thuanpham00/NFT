@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #000;
+    font-size: 1.6rem;
+    font-family: "Lato", sans-serif;
+}
+
+/* common */
+input,
+select,
+textarea,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.section--heading {
+    color: #d9d9d9;
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.btn {
+    --height: 42px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 118px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 21px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.date {
+    color: #a4a4a4;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
