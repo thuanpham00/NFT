@@ -1140,10 +1140,7 @@ a {
 }
 
 .clt__list--2 {
-    position: absolute;
-    left: 120px;
     width: 130px;
-    height: 230px;
 }
 
 .clt-item {
@@ -1151,6 +1148,8 @@ a {
     display: flex;
     align-items: center;
 }
+
+.clt__list--2 .clt-item:nth-last-child()
 
 .explore-item:nth-child(2) .clt-item {
     padding: 20px 20px 10px 14px;

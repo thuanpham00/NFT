@@ -1139,13 +1139,6 @@ a {
     background: #191919;
 }
 
-.clt__list--2 {
-    position: absolute;
-    left: 120px;
-    width: 130px;
-    height: 230px;
-}
-
 .clt-item {
     padding: 20px 30px 10px 14px;
     display: flex;
@@ -1153,7 +1146,7 @@ a {
 }
 
 .explore-item:nth-child(2) .clt-item {
-    padding: 20px 20px 10px 14px;
+    padding: 20px 30px 15px 20px;
 }
 
 .cls-item__icon {

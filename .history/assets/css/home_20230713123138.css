@@ -1081,6 +1081,10 @@ a {
     top: 50px;
 }
 
+.explore-item:nth-child(2) .clt-item {
+    padding: 20px 20px 15px 20px;
+}
+
 .explore-item {
     display: flex;
     align-items: center;
@@ -1139,21 +1143,10 @@ a {
     background: #191919;
 }
 
-.clt__list--2 {
-    position: absolute;
-    left: 120px;
-    width: 130px;
-    height: 230px;
-}
-
 .clt-item {
     padding: 20px 30px 10px 14px;
     display: flex;
     align-items: center;
-}
-
-.explore-item:nth-child(2) .clt-item {
-    padding: 20px 20px 10px 14px;
 }
 
 .cls-item__icon {

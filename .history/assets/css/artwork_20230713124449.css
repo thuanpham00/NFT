@@ -144,7 +144,6 @@ a {
     margin-left: 38px;
 }
 
-/* explore */
 .navbar-item:nth-child(2) {
     position: relative;
 }
@@ -364,7 +363,7 @@ a {
 }
 
 .concert__row-bottom {
-    margin-top: 80px;
+    margin-top: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
