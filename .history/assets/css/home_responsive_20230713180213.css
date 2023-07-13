@@ -108,7 +108,7 @@
     }
 
     .menu-drawer .explore-item:nth-child(2) .clt-item,
-    .menu-drawer .explore-item:nth-child(1) .clt-item {
+    .menu-drawer .explore-item:nth-child(2).clt-item {
         padding: 7px 20px;
     }
 

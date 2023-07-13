@@ -107,8 +107,12 @@
         height: 280px;
     }
 
-    .menu-drawer .explore-item:nth-child(2) .clt-item,
-    .menu-drawer .explore-item:nth-child(1) .clt-item {
+    .explore-item:nth-child(2) .clt-item {
+        padding: 7px 20px;
+    }
+
+    .explore-item:nth-child(2) .clt-item,
+    .menu-drawer .clt-item {
         padding: 7px 20px;
     }
 
