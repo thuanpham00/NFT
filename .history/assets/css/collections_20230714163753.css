@@ -146,8 +146,7 @@ a {
 
 .header__btn:hover {
     background: #17e3a6;
-    border-color: #17e3a6;
-    color: #000;
+    border-color: #17e3a6
 }
 
 .navbar-item:nth-child(2) {

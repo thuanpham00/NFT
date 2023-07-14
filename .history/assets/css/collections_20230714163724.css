@@ -144,11 +144,7 @@ a {
     margin-left: 38px;
 }
 
-.header__btn:hover {
-    background: #17e3a6;
-    border-color: #17e3a6;
-    color: #000;
-}
+.header__btn
 
 .navbar-item:nth-child(2) {
     position: relative;
