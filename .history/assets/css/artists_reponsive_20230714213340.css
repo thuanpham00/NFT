@@ -1,0 +1,67 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Tablet and mobile */
+@media screen and (max-width: 991px) {
+    .header {
+        border: none;
+    }
+
+    .header__inner {
+        position: relative;
+        align-items: center;
+    }
+
+    .header__inner .logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .header__inner .form__search {
+        display: none;
+    }
+
+    .navbar__list {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        width: 24px;
+        color: #666;
+    }
+
+    .name {
+        display: flex;
+        align-items: center;
+    }
+
+    .name__thuan {
+        margin-left: 20px;
+        font-size: 3rem;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: -1px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px ) {
+
+}
