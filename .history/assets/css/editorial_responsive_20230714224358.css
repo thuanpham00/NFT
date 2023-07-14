@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #000;
+    font-size: 1.6rem;
+    font-family: "Lato", sans-serif;
+}
+
+/* common */
+input,
+select,
+textarea,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.section--heading {
+    color: #d9d9d9;
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.btn {
+    --height: 42px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 118px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 21px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.date {
+    color: #a4a4a4;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* header */
+.header {
+    background: #000;
+    padding: 26px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid #212127;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 22px;
+}
+
+.navbar-item__link {
+    color: #fdfdfd;
+    font-size: 1.8rem;
+    font-weight: 400;
+    transition: ease 0.3s;
+}
+
+.navbar-item__link:hover {
+    color: #ebebeb;
+    text-decoration: underline;
+}
+
+.form__search {
+    margin-left: 80px;
+    width: 394px;
+    height: 46px;
+    border-radius: 8px;
+    background: #212127;
+    display: flex;
+    align-items: center;
+    padding: 0 63px 0 15px;
+}
+
+.form__label {
+    width: 19px;
+    height: 19px;
+    color: #9d9d9d;
+}
+
+.form__input {
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    color: #9d9d9d;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    background: transparent;
+}
+
+.header__btn {
+    margin-left: 38px;
+}
+
+.header__btn:hover {
+    background: #17e3a6;
+    border-color: #17e3a6;
+    color: #000;
+}
+
+/* editorial */
+.editorial__heading {
+    margin-top: 60px;
+    line-height: ;
+}
