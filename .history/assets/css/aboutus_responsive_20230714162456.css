@@ -355,8 +355,7 @@
     }
 
     .img1 {
-        top:0;
-        left: -25px;
+        left: 0;
         width: 118px;
         height: 116px;
     }
@@ -364,8 +363,6 @@
     .img2 {
         width: 127px;
         height: 124px;
-        left:122px;
-        top: 25px;
     }
 
     .img3 {
@@ -377,7 +374,7 @@
     .img4 {
         width: 73px;
         height: 72px;
-        top: -150px;
+        top: 50px;
     }
 
     .img5 {

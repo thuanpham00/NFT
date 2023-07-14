@@ -1,0 +1,231 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991px) {
+    .header {
+        border: none;
+    }
+
+    .header__inner {
+        position: relative;
+        align-items: center;
+    }
+
+    .header__inner .logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .header__inner .form__search {
+        display: none;
+    }
+
+    .navbar__list {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        width: 24px;
+        color: #666;
+    }
+
+    .name {
+        display: flex;
+        align-items: center;
+    }
+
+    .name__thuan {
+        margin-left: 20px;
+        font-size: 3rem;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: -1px;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: ease 0.3s;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        padding: 40px;
+        z-index: 2;
+        transform: translateX(-100%);
+    }
+
+    .menu-drawer ul {
+        margin-top: 20px;
+    }
+
+    .menu-drawer ul a {
+        display: block;
+        color: #333;
+        padding: 14px 0;
+        font-weight: 500;
+    }
+
+    .menu-drawer .navbar-item:nth-child(2) {
+        position: relative;
+    }
+
+    .menu-drawer .explore {
+        padding-top: 0;
+        position: absolute;
+        top: 10px;
+        right: 120px;
+    }
+
+    .menu-drawer .explore-item:nth-child(1) {
+        padding-bottom: 10px;
+    }
+
+    .menu-drawer .clt__list {
+        position: absolute;
+        bottom: -250px;
+    }
+
+    .menu-drawer .clt__list--2 {
+        height: 280px;
+    }
+
+    .menu-drawer .explore-item:nth-child(2) .clt-item,
+    .menu-drawer .explore-item:nth-child(1) .clt-item {
+        padding: 7px 20px;
+    }
+
+    .connect {
+        margin-left: 22px;
+        font-size: 1.8rem;
+    }
+
+    .menu-drawer .form__search {
+        background: transparent;
+    }
+
+    .menu-drawer .form__label {
+        margin-left: -72px;
+    }
+
+    .menu-drawer .form__input {
+        display: none;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .separate {
+        border-top: 1.5px solid #ebebeb;
+    }
+
+    .team__heading {
+        width: 300px;
+    }
+
+    .team__desc {
+        width: 400px;
+    }
+
+    .img1 {
+        left: -91px;
+        top: 70px;
+    }
+
+    .img2 {
+        left: 220px;
+    }
+
+
+    .img4 {
+        top: -260px;
+        right: -50px;
+    }
+
+    .img5 {
+        top: -180px;
+        left: -91px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .menu-drawer {
+        padding: 20px;
+        inset: 0 25% 0 0;
+    }
+
+    .menu-drawer .navbar-item:nth-child(2) {
+        position: relative;
+    }
+
+    .menu-drawer .explore {
+        padding-top: 0;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .menu-drawer .explore-item:nth-child(1) {
+        padding-bottom: 10px;
+    }
+
+    .menu-drawer .clt__list {
+        position: absolute;
+        bottom: -250px;
+    }
+
+    .explore-item:nth-child(1) {
+        padding: 10px 15px;
+    }
+
+    .menu-drawer .clt-item {
+        padding: 7px 15px;
+    }
+
+    .name__thuan {
+        margin-left: 10px;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: -1px;
+    }
+
+    .header__inner .logo {
+        width: 51px;
+        height: 21px;
+    }
+
+    .header__btn {
+        display: none;
+    }
+}

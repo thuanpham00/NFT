@@ -355,8 +355,7 @@
     }
 
     .img1 {
-        top:0;
-        left: -25px;
+        left:0;
         width: 118px;
         height: 116px;
     }
@@ -364,12 +363,10 @@
     .img2 {
         width: 127px;
         height: 124px;
-        left:122px;
-        top: 25px;
     }
 
     .img3 {
-        left: 278px;
+        left:0;
         width: 112px;
         height: 110px;
     }
@@ -377,38 +374,21 @@
     .img4 {
         width: 73px;
         height: 72px;
-        top: -150px;
     }
 
     .img5 {
-        z-index: -1;
         width: 66px;
         height: 66px;
-        top: -100px;
-        left: -40px;
-    }
-
-    .team {
-        padding: 10px 0 60px;
+        left: 100px;
     }
 
     .team__heading {
         width: 234px;
-        color: #fff;
-        text-align: center;
         font-size: 3.6rem;
-        font-weight: 700;
-        line-height: 40px; /* 111.111% */
-        letter-spacing: 0.36px;
     }
 
     .team__desc {
-        width: 270px;
-        color: #cfcfcf;
-        text-align: center;
-        font-size: 1.4rem;
-        line-height: 22px; /* 157.143% */
-        letter-spacing: 0.14px;
+        width: 390px;
     }
 
     .team__inner {
@@ -427,91 +407,11 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .newslaters {
-        margin-top: 40px;
-    }
-
     .newslaters__desc {
-        margin: 18px auto 0;
-        width: 276px;
-        color: #fff;
-        text-align: center;
-        font-size: 1rem;
-        line-height: 1;
-        letter-spacing: 0.1px;
-    }
 
+    } 
+    
     .newslaters__heading {
-        margin: 0 auto 0;
-        width: 208px;
-        color: #d9d9d9;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 500;
-        line-height: 1.3; /* 130% */
-    }
 
-    .newslaters__form {
-        margin: 40px auto 0;
-        width: 335px;
-        height: 62px;
-    }
-
-    .newslatters__button {
-        width: 38px;
-        height: 38px;
-    }
-
-    .newslatters__button svg {
-        width: 20px;
-        height: 20px;
-    }
-
-    .newslaters__media {
-        margin-top: 50px;
-        width: 335px;
-        height: 306px;
-    }
-    .newslaters__img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .footer {
-        padding-top: 40px;
-    }
-
-    .footer__logo {
-        width: 107px;
-        height: 42px;
-    }
-
-    .footer__list {
-        column-gap: 20px;
-    }
-
-    .footer-item__link {
-        font-size: 1.6rem;
-        font-weight: 400;
-        line-height: 18px;
-    }
-
-    .footer__social {
-        margin: 40px auto 0;
-    }
-
-    .footer__social-item svg {
-        width: 24px;
-        height: 24px;
-    }
-
-    .footer__copyright {
-        font-size: 1.4rem;
-        font-weight: 500;
-    }
-
-    .footer__privacy {
-        font-size: 1.2rem;
-        font-weight: 500;
     }
 }

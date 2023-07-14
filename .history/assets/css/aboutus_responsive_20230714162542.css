@@ -355,7 +355,6 @@
     }
 
     .img1 {
-        top:0;
         left: -25px;
         width: 118px;
         height: 116px;
@@ -364,8 +363,6 @@
     .img2 {
         width: 127px;
         height: 124px;
-        left:122px;
-        top: 25px;
     }
 
     .img3 {
