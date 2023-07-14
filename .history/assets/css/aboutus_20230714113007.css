@@ -425,14 +425,6 @@ a {
 }
 
 .our-team {
-    margin-top: 145px;
+    margin-top: ;
     text-align: center;
-}
-
-
-.our-team__list {
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    gap: 30px;
 }

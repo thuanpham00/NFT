@@ -432,7 +432,5 @@ a {
 
 .our-team__list {
     margin-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    gap: 30px;
+    dis
 }

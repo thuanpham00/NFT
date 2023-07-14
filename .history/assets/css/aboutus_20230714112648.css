@@ -405,7 +405,7 @@ a {
 .team__inner {
     margin-top: 568px;
     display: flex;
-    align-items: center;
+    ai
     column-gap: 140px;
 }
 
@@ -422,17 +422,4 @@ a {
     font-size: 2rem;
     line-height: 1.5;
     letter-spacing: 0.2px;
-}
-
-.our-team {
-    margin-top: 145px;
-    text-align: center;
-}
-
-
-.our-team__list {
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    gap: 30px;
 }

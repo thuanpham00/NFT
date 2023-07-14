@@ -405,8 +405,6 @@ a {
 .team__inner {
     margin-top: 568px;
     display: flex;
-    align-items: center;
-    column-gap: 140px;
 }
 
 .team__title {
@@ -416,23 +414,12 @@ a {
 }
 
 .team__text {
-    width: 600px;
     margin-top: 24px;
-    color: #cfcfcf;
-    font-size: 2rem;
-    line-height: 1.5;
-    letter-spacing: 0.2px;
-}
+    Web3 is changing the world as we know it.
 
-.our-team {
-    margin-top: 145px;
-    text-align: center;
-}
+We’re seeing the start of a decentralized digital space where art, videos, writing, and other forms of creativity can be bought and sold on the blockchain—and we want to help everyone launch their own NFTs.
 
+Most creators don't have access to a dev team or hours of studying code to turn digital art into tokens. That’s why we are committed to create the tools to make it easier, more accessible, and seamless for creators to enter this new space.
 
-.our-team__list {
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    gap: 30px;
+Our mission is to empower the web3 creator economy, and we hope you'll join us!s
 }
