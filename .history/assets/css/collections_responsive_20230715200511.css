@@ -1,11 +1,11 @@
-/* PC */
+/* PC breakpoint */
 @media screen and (min-width: 992px) {
     .mobile-header {
         display: none;
     }
 }
 
-/* Tablet and mobile */
+/* Tablet & mobile breakpoint */
 @media screen and (max-width: 991px) {
     .header {
         border: none;
@@ -187,34 +187,66 @@
         transform: translateX(0);
     }
 
-    .trending-item__content:nth-child(4),
-    .trending-item__content:nth-child(5),
-    .trending-item__content:nth-child(6),
-    .trending-item__content:nth-child(7),
-    .trending-item__content:nth-child(8),
-    .trending__info:nth-child(3),
-    .trending__info:nth-child(4),
-    .trending__info:nth-child(5),
-    .trending__info:nth-child(6) {
-        display: none;
+    .separate {
+        border-top: 1.5px solid #ebebeb;
     }
 
-    .trending-item {
-        width: 100%;
+    .NFT__heading {
+        text-align: left;
+        width: 335px;
+        font-size: 3.6rem;
     }
 
-    .newslaters {
+    .NFT-item__link {
+        font-size: 1.4rem;
+    }
+
+    .NFT__list {
+        margin-top: 30px;
+    }
+
+    .NFT__row {
         flex-direction: column;
+        align-items: flex-start;
     }
 
-    .newslaters__desc,
-    .newslaters__heading {
-        width: 500px;
-        text-align: center;
+    .NFT-card__list {
+        gap: 20px;
     }
 
-    .newslaters__form {
-        margin: 92px auto 50px;
+    .NFT-card__body {
+        width: 94%;
+        height: 45%;
+        left: 6px;
+        right: 6px;
+    }
+
+    .NFT-card__img {
+        top: 14px;
+        bottom: 110px;
+        left: 6px;
+    }
+
+    .NFT-card__desc {
+        font-size: 1.2rem;
+    }
+
+    .NFT-card__title {
+        margin-top: 10px;
+        font-size: 1.6rem;
+    }
+
+    .avatar-item__icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .NFT-card__row--center {
+        margin-top: 0;
+    }
+
+    .NFT-card__row ~ .NFT-card__row {
+        padding: 0 10px;
     }
 
     .footer__row--1 {
@@ -255,12 +287,12 @@
     }
 }
 
-/* Tablet */
+/* Tablet breakpoint */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     /* ### */
 }
 
-/* Mobile */
+/* Mobile breakpoint */
 @media screen and (max-width: 767px) {
     .menu-drawer {
         padding: 20px;
@@ -350,59 +382,59 @@
         width: 100%;
     }
 
-    .trending__heading {
-        font-size: 4rem;
-        width: 300px;
+    .NFT__list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 25px;
     }
 
-    .newslaters {
-        margin-top: 40px;
+    .NFT-card__list {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
     }
 
-    .newslaters__desc {
-        margin: 18px auto 0;
-        width: 276px;
+    .NFT-card__body {
+        left: 10px;
+        right: 10px;
+    }
+
+    .NFT-card__desc {
+        font-size: 1.5rem;
+    }
+
+    .NFT-card__img {
+        top: 10px;
+    }
+
+    .NFT-card__title {
+        margin-top: 30px;
         color: #fff;
-        text-align: center;
-        font-size: 1rem;
-        line-height: 1;
-        letter-spacing: 0.1px;
-    }
-
-    .newslaters__heading {
-        margin: 0 auto 0;
-        width: 208px;
-        color: #d9d9d9;
         text-align: center;
         font-size: 2rem;
         font-weight: 500;
-        line-height: 1.3; /* 130% */
+        line-height: 22px;
+        letter-spacing: 2px;
     }
 
-    .newslaters__form {
-        margin: 40px auto 0;
-        width: 335px;
-        height: 62px;
+    .NFT-card__row--center {
+        margin-top: 30px;
     }
 
-    .newslatters__button {
-        width: 38px;
-        height: 38px;
+    .NFT-card__row--bottom {
+        margin-top: 15px;
     }
 
-    .newslatters__button svg {
-        width: 20px;
-        height: 20px;
+    .NFT-card__row ~ .NFT-card__row {
+        padding: 0 20px;
     }
 
-    .newslaters__media {
-        margin-top: 50px;
-        width: 335px;
-        height: 306px;
+    .NFT-card__desc {
+        font-size: 1.6rem;
     }
-    .newslaters__img {
-        width: 100%;
-        height: 100%;
+
+    .avatar-item__icon {
+        width: 25px;
+        height: 25px;
     }
 
     .footer {

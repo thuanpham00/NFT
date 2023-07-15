@@ -3,9 +3,13 @@
     .mobile-header {
         display: none;
     }
+
+    .show-on-mobile {
+        display: none;
+    }
 }
 
-/* Tablet and mobile */
+/* Tablet & mobile */
 @media screen and (max-width: 991px) {
     .header {
         border: none;
@@ -187,20 +191,50 @@
         transform: translateX(0);
     }
 
-    .trending-item__content:nth-child(4),
-    .trending-item__content:nth-child(5),
-    .trending-item__content:nth-child(6),
-    .trending-item__content:nth-child(7),
-    .trending-item__content:nth-child(8),
-    .trending__info:nth-child(3),
-    .trending__info:nth-child(4),
-    .trending__info:nth-child(5),
-    .trending__info:nth-child(6) {
-        display: none;
+    .team__heading {
+        width: 300px;
     }
 
-    .trending-item {
-        width: 100%;
+    .team__desc {
+        width: 400px;
+    }
+
+    .img1 {
+        left: -91px;
+        top: 20px;
+    }
+
+    .img2 {
+        left: 200px;
+    }
+
+    .img3 {
+        top: -10px;
+        left: 543px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .img4 {
+        top: -260px;
+        right: -25px;
+        width: 140px;
+        height: 140px;
+    }
+
+    .img5 {
+        top: -220px;
+        left: -91px;
+    }
+
+    .team__inner {
+        margin-top: 400px;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .our-team__list {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .newslaters {
@@ -257,7 +291,9 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    /* ### */
+    .show-on-mobile {
+        display: none;
+    }
 }
 
 /* Mobile */
@@ -350,9 +386,77 @@
         width: 100%;
     }
 
-    .trending__heading {
-        font-size: 4rem;
-        width: 300px;
+    .img1 {
+        top: 0;
+        left: -25px;
+        width: 118px;
+        height: 116px;
+    }
+
+    .img2 {
+        width: 127px;
+        height: 124px;
+        left: 122px;
+        top: 25px;
+    }
+
+    .img3 {
+        left: 278px;
+        width: 112px;
+        height: 110px;
+    }
+
+    .img4 {
+        width: 73px;
+        height: 72px;
+        top: -150px;
+    }
+
+    .img5 {
+        z-index: -1;
+        width: 66px;
+        height: 66px;
+        top: -100px;
+        left: -40px;
+    }
+
+    .team {
+        padding: 60px 0 60px;
+    }
+
+    .team__heading {
+        width: 234px;
+        color: #fff;
+        text-align: center;
+        font-size: 3.6rem;
+        font-weight: 700;
+        line-height: 40px; /* 111.111% */
+        letter-spacing: 0.36px;
+    }
+
+    .team__desc {
+        width: 270px;
+        color: #cfcfcf;
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 22px; /* 157.143% */
+        letter-spacing: 0.14px;
+    }
+
+    .team__inner {
+        margin-top: 200px;
+    }
+
+    .team__content {
+        order: 2;
+    }
+
+    .team__text {
+        width: 335px;
+    }
+
+    .our-team__list {
+        grid-template-columns: 1fr 1fr;
     }
 
     .newslaters {
