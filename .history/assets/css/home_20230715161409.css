@@ -83,6 +83,7 @@ a {
 }
 
 .header__inner {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -206,7 +207,6 @@ a {
 }
 
 .header__btn {
-    /* position: relative; */
     margin-left: 38px;
 }
 
@@ -217,15 +217,14 @@ a {
 }
 
 .connect-login {
-    z-index: 1;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     padding: 20px;
-    position: fixed;
+    position: absolute;
     width: 480px;
-    height: 510px;
-    top: 110px;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 470px;
+    top: 100px;
+    left: 340px;
     border-radius: 5px;
     border: 1px solid #17e3a6;
     background: #191919;
@@ -252,7 +251,7 @@ a {
 }
 
 .connect-login__row:last-child {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 0;
 }
 
@@ -285,13 +284,13 @@ a {
 .or {
     text-align: center;
     margin: 0 auto;
+    padding: 5px 0;
     color: #e8e8e8;
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 500;
 }
 
 .connect-login__desc {
-    text-align: left;
     width: 450px;
     margin-top: 20px;
     color: #e8e8e8;
@@ -300,26 +299,12 @@ a {
 }
 
 .connect-login__desc span {
-    color: #17e3a6;
+    color: #17e3a6
 }
 
-.header__btn:hover .connect-login {
-    display: block;
-}
-
-.menu-overplay__connect {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 1);
-    z-index: -1;
+.header__btn:active .connect-login {
     opacity: 0;
     visibility: hidden;
-    transition: ease 0.3s;
-}
-
-.header__btn:hover .menu-overplay__connect {
-    opacity: 0.8;
-    visibility: visible;
 }
 
 /* hero-wrap */

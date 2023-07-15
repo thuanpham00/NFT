@@ -317,10 +317,7 @@ a {
     transition: ease 0.3s;
 }
 
-.header__btn:hover .menu-overplay__connect {
-    opacity: 0.8;
-    visibility: visible;
-}
+.header__btn:hover .menu-
 
 /* hero-wrap */
 .hero-wrap {

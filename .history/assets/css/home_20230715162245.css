@@ -206,7 +206,7 @@ a {
 }
 
 .header__btn {
-    /* position: relative; */
+    position: relative;
     margin-left: 38px;
 }
 
@@ -220,16 +220,15 @@ a {
     z-index: 1;
     display: none;
     padding: 20px;
-    position: fixed;
+    position: absolute;
     width: 480px;
-    height: 510px;
+    height:510px;
     top: 110px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: -700px;
     border-radius: 5px;
     border: 1px solid #17e3a6;
     background: #191919;
-    box-shadow: 0px 23px 250px 0px #000;
+    /* box-shadow: 0px 23px 250px 0px #000; */
 }
 
 .connect-row__list {
@@ -300,26 +299,11 @@ a {
 }
 
 .connect-login__desc span {
-    color: #17e3a6;
+    color: #17e3a6
 }
 
-.header__btn:hover .connect-login {
+.header__btn:visited .connect-login {
     display: block;
-}
-
-.menu-overplay__connect {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 1);
-    z-index: -1;
-    opacity: 0;
-    visibility: hidden;
-    transition: ease 0.3s;
-}
-
-.header__btn:hover .menu-overplay__connect {
-    opacity: 0.8;
-    visibility: visible;
 }
 
 /* hero-wrap */

@@ -317,11 +317,6 @@ a {
     transition: ease 0.3s;
 }
 
-.header__btn:hover .menu-overplay__connect {
-    opacity: 0.8;
-    visibility: visible;
-}
-
 /* hero-wrap */
 .hero-wrap {
     padding: 60px 0 75px;

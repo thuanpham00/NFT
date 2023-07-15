@@ -311,15 +311,10 @@ a {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 1);
-    z-index: -1;
+    z-index: 1;
     opacity: 0;
     visibility: hidden;
     transition: ease 0.3s;
-}
-
-.header__btn:hover .menu-overplay__connect {
-    opacity: 0.8;
-    visibility: visible;
 }
 
 /* hero-wrap */

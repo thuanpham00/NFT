@@ -318,8 +318,8 @@ a {
 }
 
 .header__btn:hover .menu-overplay__connect {
-    opacity: 0.8;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
 }
 
 /* hero-wrap */

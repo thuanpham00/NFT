@@ -83,9 +83,22 @@ a {
 }
 
 .header__inner {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.connect-login {
+    position: absolute;
+    width: 680px;
+    height: 748px;
+    top: 100px;
+    left: 240px;
+    border-radius: 5px;
+    border: 1px solid #17e3a6;
+    background: #191919;
+    box-shadow: 0px 23px 250px 0px #000;
 }
 
 .navbar__list {
@@ -206,7 +219,6 @@ a {
 }
 
 .header__btn {
-    /* position: relative; */
     margin-left: 38px;
 }
 
@@ -214,112 +226,6 @@ a {
     background: #17e3a6;
     border-color: #17e3a6;
     color: #000;
-}
-
-.connect-login {
-    z-index: 1;
-    display: none;
-    padding: 20px;
-    position: fixed;
-    width: 480px;
-    height: 510px;
-    top: 110px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 5px;
-    border: 1px solid #17e3a6;
-    background: #191919;
-    box-shadow: 0px 23px 250px 0px #000;
-}
-
-.connect-row__list {
-    margin-top: 20px;
-}
-
-.connect-login__row {
-    margin-bottom: 10px;
-    padding: 10px 30px 10px 27px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 4px;
-    border: 1px solid #17e3a6;
-    background: #000;
-}
-
-.connect-login__row:hover {
-    border-color: #9b2626;
-}
-
-.connect-login__row:last-child {
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
-.connect__heading {
-    font-size: 3rem;
-}
-
-.connect-login__title {
-    color: #e8e8e8;
-    font-size: 1.6rem;
-    font-weight: 500;
-}
-
-.connect-login__img {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-}
-
-.connect-login__app {
-    width: 30px;
-    height: 30px;
-}
-
-.connect-login__icon svg {
-    height: 15px;
-    width: 15px;
-}
-
-.or {
-    text-align: center;
-    margin: 0 auto;
-    color: #e8e8e8;
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.connect-login__desc {
-    text-align: left;
-    width: 450px;
-    margin-top: 20px;
-    color: #e8e8e8;
-    font-size: 1.5rem;
-    line-height: 1.4;
-}
-
-.connect-login__desc span {
-    color: #17e3a6;
-}
-
-.header__btn:hover .connect-login {
-    display: block;
-}
-
-.menu-overplay__connect {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 1);
-    z-index: -1;
-    opacity: 0;
-    visibility: hidden;
-    transition: ease 0.3s;
-}
-
-.header__btn:hover .menu-overplay__connect {
-    opacity: 0.8;
-    visibility: visible;
 }
 
 /* hero-wrap */
