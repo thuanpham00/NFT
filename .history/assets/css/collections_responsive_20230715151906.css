@@ -1,0 +1,455 @@
+/* PC breakpoint */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Tablet & mobile breakpoint */
+@media screen and (max-width: 991px) {
+    .header {
+        border: none;
+    }
+
+    .header__inner {
+        position: relative;
+        align-items: center;
+    }
+
+    .header__inner .logo {
+        display: none;
+    }
+
+    .header__search {
+        position: absolute;
+        right: 0;
+        color: #cac6c6;
+        font-size: 2rem;
+    }
+
+    /* search__result */
+    .search-result {
+        width: 393px;
+        height: 540px;
+        padding: 10px 0;
+    }
+
+    .search-result__title {
+        margin-left: 20px;
+    }
+
+    .search-result__row {
+        padding-left: 30px;
+    }
+
+    .navbar__list {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        width: 24px;
+        color: #666;
+    }
+
+    .name {
+        display: flex;
+        align-items: center;
+    }
+
+    .name__thuan {
+        margin-left: 20px;
+        font-size: 3rem;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: -1px;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: ease 0.3s;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        padding: 40px;
+        z-index: 2;
+        transform: translateX(-100%);
+    }
+
+    .menu-drawer ul {
+        margin-top: 20px;
+    }
+
+    .menu-drawer ul a {
+        display: block;
+        color: #333;
+        padding: 25px 0;
+        font-weight: 500;
+    }
+
+    .menu-drawer .navbar-item:nth-child(3),
+    .menu-drawer .navbar-item:nth-child(2) {
+        position: relative;
+    }
+
+    .menu-drawer .explore {
+        padding: 10px 0;
+        padding-top: 0;
+        position: absolute;
+        top: -50px;
+        right: 120px;
+        height: 140px;
+    }
+
+    .menu-drawer .explore-item:nth-child(1) {
+        padding: 10px 10px 0;
+    }
+
+    .menu-drawer .explore-item:nth-child(2) {
+        padding: 0px 10px 10px;
+    }
+
+    .menu-drawer .community {
+        position: absolute;
+        top: 30px;
+        right: 100px;
+        padding: 10px 0;
+        height: 300px;
+    }
+
+    .menu-drawer .community__list {
+        margin-top: 0;
+    }
+
+    .menu-drawer .community-item {
+        margin-bottom: 0;
+    }
+
+    .menu-drawer .community-item .community-item__link {
+        padding: 15px 0;
+    }
+
+    .community-item:nth-child(1):hover .about-us__list {
+        height: 250px;
+        left: 138px;
+        top: -30px;
+    }
+
+    .about-us__item .about-us__link {
+        padding: 10px 0;
+    }
+
+    .menu-drawer .clt__list {
+        position: absolute;
+        bottom: -260px;
+        height: 315px;
+    }
+
+    .menu-drawer .clt__list--2 {
+        height: 320px;
+    }
+
+    .menu-drawer .explore-item:nth-child(2) .clt-item,
+    .menu-drawer .explore-item:nth-child(1) .clt-item {
+        padding: 1px 20px 0;
+    }
+
+    .connect {
+        margin-left: 22px;
+        font-size: 1.8rem;
+    }
+
+    .menu-drawer .form__search {
+        background: transparent;
+    }
+
+    .menu-drawer .form__label {
+        margin-left: -72px;
+    }
+
+    .menu-drawer .form__input {
+        display: none;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .separate {
+        border-top: 1.5px solid #ebebeb;
+    }
+
+    .NFT__heading {
+        text-align: left;
+        width: 335px;
+        font-size: 3.6rem;
+    }
+
+    .NFT-item__link {
+        font-size: 1.4rem;
+    }
+
+    .NFT__list {
+        margin-top: 30px;
+    }
+
+    .NFT__row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .NFT-card__list {
+        gap: 20px;
+    }
+
+    .NFT-card__body {
+        width: 94%;
+        height: 45%;
+        left: 6px;
+        right: 6px;
+    }
+
+    .NFT-card__img {
+        top: 14px;
+        bottom: 110px;
+        left: 6px;
+    }
+
+    .NFT-card__desc {
+        font-size: 1.2rem;
+    }
+
+    .NFT-card__title {
+        margin-top: 10px;
+        font-size: 1.6rem;
+    }
+
+    .avatar-item__icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .NFT-card__row--center {
+        margin-top: 0;
+    }
+
+    .NFT-card__row ~ .NFT-card__row {
+        padding: 0 10px;
+    }
+
+    .footer__row--1 {
+        flex-wrap: wrap;
+    }
+
+    .footer__logo {
+        height: 100px;
+        width: 200px;
+    }
+
+    .footer-item__link {
+        font-size: 3.2rem;
+    }
+
+    .footer__social {
+        margin: 30px auto 0;
+    }
+
+    .footer__social-item svg {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 0 15px;
+    }
+
+    .footer__row--2 {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .footer__copyright {
+        font-size: 2.8rem;
+    }
+
+    .footer__privacy {
+        font-size: 2.8rem;
+    }
+}
+
+/* Tablet breakpoint */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Mobile breakpoint */
+@media screen and (max-width: 767px) {
+    .menu-drawer {
+        padding: 20px;
+        inset: 0 25% 0 0;
+    }
+
+    .menu-drawer .navbar-item:nth-child(2) {
+        position: relative;
+    }
+
+    .menu-drawer .explore {
+        padding-top: 0;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .menu-drawer .clt__list {
+        position: absolute;
+        bottom: -250px;
+    }
+
+    .menu-drawer .explore {
+        top: -50px;
+    }
+
+    .menu-drawer .explore-item {
+        padding: 5px 10px 0;
+    }
+
+    .explore-item:nth-child(1) {
+        padding: 10px 15px;
+    }
+
+    .menu-drawer .clt-item {
+        padding: 7px 15px;
+    }
+
+    .menu-drawer .community {
+        right: -10px;
+        top: 5px;
+        height: 250px;
+    }
+
+    .menu-drawer .community-item .community-item__link {
+        padding: 10px 10px;
+    }
+
+    .name__thuan {
+        margin-left: 10px;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: -1px;
+    }
+
+    
+    
+    .header__btn {
+        display: none;
+    }
+
+    .NFT__list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 25px;
+    }
+
+    .NFT-card__list {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .NFT-card__body {
+        left: 10px;
+        right: 10px;
+    }
+
+    .NFT-card__desc {
+        font-size: 1.5rem;
+    }
+
+    .NFT-card__img {
+        top: 10px;
+    }
+
+    .NFT-card__title {
+        margin-top: 30px;
+        color: #fff;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 2px;
+    }
+
+    .NFT-card__row--center {
+        margin-top: 30px;
+    }
+
+    .NFT-card__row--bottom {
+        margin-top: 15px;
+    }
+
+    .NFT-card__row ~ .NFT-card__row {
+        padding: 0 20px;
+    }
+
+    .NFT-card__desc {
+        font-size: 1.6rem;
+    }
+
+    .avatar-item__icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer {
+        padding-top: 40px;
+    }
+
+    .footer__logo {
+        width: 107px;
+        height: 42px;
+    }
+
+    .footer__list {
+        column-gap: 20px;
+    }
+
+    .footer-item__link {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .footer__social {
+        margin: 40px auto 0;
+    }
+
+    .footer__social-item svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer__copyright {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .footer__privacy {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}
