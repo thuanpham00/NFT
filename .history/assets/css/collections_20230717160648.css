@@ -515,7 +515,8 @@ a {
     height: 102%;
     border-radius: 8px;
     background-color: #fbda61;
-    background-image: linear-gradient(var(--rotate), #fbda61 0%, #ff5acd 100%);
+    background-image: linear-gradient(var(--), #fbda61 0%, #ff5acd 100%);
+
     z-index: -1;
     top: -1%;
     left: -2%;
@@ -534,8 +535,8 @@ a {
     margin: 0 auto;
     transform: scale(0.8);
     filter: blur(calc(var(--card-height) / 6));
-    background-color: #fbda61;
-    background-image: linear-gradient(var(--rotate), #fbda61 0%, #ff5acd 100%);
+    background-color: #ffe53b;
+    background-image: linear-gradient(var(--rotate), #ffe53b 0%, #ff2525 74%);
     opacity: 1;
     transition: opacity 0.5s;
     animation: spin 2.5s linear infinite;

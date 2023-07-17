@@ -692,9 +692,9 @@ a {
         #c850c0 46%,
         #ffcc70 100%
     );
-    opacity: 1;
-    transition: opacity 0.5s;
-    animation: spin 2.5s linear infinite;
+    
+    background-color: #0093e9;
+    background-image: linear-gradient(var(--rotate), #0093e9 0%, #80d0c7 100%);
 }
 
 .artwork-item:hover {

@@ -708,7 +708,7 @@ a {
 }
 
 .artwork-item__search {
-    z-index: 0;
+    z-index: 1;
     padding: 9px 20px;
     position: absolute;
     top: 57.3%;

@@ -673,29 +673,7 @@ a {
     sẽ được lặp vô hạn (infinite) cho đến khi có yêu cầu ngừng lại. */
 }
 
-.artwork-item::after {
-    position: absolute;
-    content: "";
-    top: calc(var(--card-height) / 6);
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    transform: scale(0.8);
-    filter: blur(calc(var(--card-height) / 6));
-    background-color: #4158d0;
-    background-image: linear-gradient(
-        var(--rotate),
-        #4158d0 0%,
-        #c850c0 46%,
-        #ffcc70 100%
-    );
-    opacity: 1;
-    transition: opacity 0.5s;
-    animation: spin 2.5s linear infinite;
-}
+
 
 .artwork-item:hover {
     transform: translateY(-20px);
@@ -708,7 +686,7 @@ a {
 }
 
 .artwork-item__search {
-    z-index: 0;
+    z-index: 1;
     padding: 9px 20px;
     position: absolute;
     top: 57.3%;

@@ -13,11 +13,6 @@
     }
 }
 
-:root {
-    --card-height: 65vh;
-    --card-width: calc(var(--card-height) / 1.5);
-}
-
 * {
     box-sizing: border-box;
 }
@@ -347,6 +342,7 @@ a {
     opacity: 0;
 }
 
+/* explore */
 .navbar-item:nth-child(2) {
     position: relative;
 }
@@ -458,158 +454,331 @@ a {
     display: block;
 }
 
-/* NFT */
-.NFT {
+/* concert */
+.concert {
     margin-top: 60px;
 }
 
-.NFT__heading {
-    color: #ececec;
-    font-weight: 600;
-    line-height: 60px;
-}
-
-.NFT__row {
+.concert__row--top {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
-.NFT__list {
+.concert__heading {
+    width: 470px;
+}
+
+.concert__desc {
+    margin-top: 10.5px;
+    color: #c7c7c7;
+    font-size: 1.8rem;
+}
+
+.concert-row {
+    margin-top: 40px;
     display: flex;
-    column-gap: 20px;
 }
 
-.NFT-item__link {
-    color: #cfcfcf;
-    font-size: 2rem;
+.concert-row__left {
+    padding-right: 38px;
+    border-right: 1px solid #bebebe;
+}
+
+.concert-row__right {
+    padding-left: 30px;
+}
+
+.concert-row__desc {
+    color: #c7c7c7;
+    font-size: 1.7rem;
+}
+
+.concert-row__title {
+    margin: 14px 0;
+    color: #fff;
+    font-size: 3rem;
     font-weight: 500;
-    line-height: 1.5;
-    padding: 10px 16px;
-    border: 1.5px solid #212127;
 }
 
-.NFT-item__link:hover {
-    background: #17e3a6;
+.concert-row__button {
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 126px;
+    height: 32px;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.concert-row__icon {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ebe9e9;
+    border-radius: 99px;
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.concert-row__link {
     color: #000;
-    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 14px;
 }
 
-.NFT-card__list {
-    margin: 60px 0 150px;
+.concert__link {
+    margin-top: 34px;
+    --height: 47px;
+    min-width: 249px;
+    border-radius: 23.5px;
+}
+
+.concert__img {
+    position: relative;
+}
+
+.concert__play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.concert__play {
+    width: 86px;
+    height: 86px;
+    background: #fff;
+    border-radius: 999px;
+}
+
+.concert__play svg {
+    position: absolute;
+    left: 53%;
+    top: 50%;
+    transform: translate(-53%, -50%);
+}
+
+.concert__row-bottom {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.concert__row-bottom__heading {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+}
+
+.concert-info {
+    display: flex;
+    align-items: center;
+    column-gap: 29px;
+}
+
+.concert-info__desc:nth-child(2) {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.concert-info__desc:nth-child(2):hover .trend__list {
+    display: block;
+}
+
+.concert-info__desc {
+    padding-bottom: 10px;
+    color: #d2d2d2;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.375; /* 137.5% */
+}
+
+.trend__list {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    bottom: -200px;
+    left: 0px;
+    padding: 20px 0 26px;
+    width: 200px;
+    height: 205px;
+    border-radius: 4px;
+    background: #191919;
+    box-shadow: 0px -6px 4px 0px #000;
+}
+
+.trend-item {
+    padding: 0 23px 0 16px;
+    margin-top: 16px;
+}
+
+.trend-item:first-child {
+    margin-top: 0;
+}
+
+.trend-item__link {
+    color: #dbdbdb;
+    font-size: 1.4rem;
+}
+
+.trend-item__link:hover {
+    color: #17e3a6;
+}
+
+.concert-card__list {
+    margin-top: 60px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 
-.NFT-card__item {
-    width: 100%;
+.concert-card__item {
     position: relative;
-    transition: ease 0.3s;
+    width: 100%;
+    transition: ease 0.2s;
 }
 
-.NFT-card__item::before {
+.concert-card__item::before {
     position: absolute;
     content: "";
     width: 104%;
     height: 102%;
     border-radius: 8px;
-    background-color: #fbda61;
-    background-image: linear-gradient(var(--rotate), #fbda61 0%, #ff5acd 100%);
+    background-color: #0093e9;
+    background-image: linear-gradient(--, #0093e9 0%, #80d0c7 100%);
+
     z-index: -1;
     top: -1%;
     left: -2%;
     animation: spin 2.5s linear infinite;
 }
 
-.NFT-card__item::after {
-    position: absolute;
-    content: "";
-    top: calc(var(--card-height) / 6);
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
+.concert-card__item:hover {
+    transform: translateY(-10px);
+}
+
+.concert-card__img {
+    position: relative;
+}
+
+.concert-card__thumb {
     width: 100%;
-    margin: 0 auto;
-    transform: scale(0.8);
-    filter: blur(calc(var(--card-height) / 6));
-    background-color: #fbda61;
-    background-image: linear-gradient(var(--rotate), #fbda61 0%, #ff5acd 100%);
-    opacity: 1;
-    transition: opacity 0.5s;
-    animation: spin 2.5s linear infinite;
-}
-
-.NFT-card__item:hover {
-    transform: scale(0.9);
-}
-
-.NFT-card__thumb {
-    width: 100%;
-}
-
-.NFT-card__body {
-    width: 94.6%;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    height: 208px;
-    background: rgba(246, 246, 246, 0.2);
-    backdrop-filter: blur(112.5px);
-}
-
-.NFT-card__img {
-    width: 94.3%;
-    z-index: -1;
-    position: absolute;
-    bottom: 160px;
-    left: 10px;
-    left: 10px;
-}
-
-.NFT-card__row {
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 18px;
-}
-
-.NFT-card__desc {
-    color: #fff;
-    font-size: 1.5rem;
-    line-height: 22px;
-}
-
-.NFT-card__title {
-    margin-top: 35px;
-    padding: 0 10px;
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 2.5px;
-}
-
-.NFT-card__row--bottom {
-    margin-top: 0;
 }
 
 .avatar-group {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 79px;
+    height: 32px;
+    border-radius: 18px;
+    background: rgba(217, 217, 217, 0.25);
 }
 
-.avatar-item {
-    margin-left: -10px;
+.avatar-item__decor {
+    margin-left: -5px;
 }
 
-.avatar-item:first-child {
-    margin-left: 0;
+.concert-card__desc {
+    margin-top: 10px;
+    color: #d3d3d3;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
+.concert-card__heading {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.concert-card__row {
+    margin-top: 20px;
+    display: flex;
+    column-gap: 75px;
+}
+
+.concert-card__info {
+    color: #d3d3d3;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* letter */
+.letter {
+    margin: 150px 0;
+}
+
+.letter__heading {
+    text-align: center;
+}
+
+.newslaters {
+    background: linear-gradient(
+        101deg,
+        #20e2a7 0%,
+        #77dcce 17.34%,
+        #6fc7f2 34.68%,
+        #a0a1ed 50.29%,
+        #fe5cd6 75.45%,
+        #ff669f 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.letter__desc {
+    margin: 20px auto 60px;
+    width: 632px;
+    color: #aaa;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+
+.letter__form {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 370px;
+    height: 80px;
+    border-radius: 40px;
+    border: 1px solid #a3a3a3;
+}
+
+.letter__input {
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-left: 30px;
+    color: #b6b6b6;
+    font-size: 2rem;
+    letter-spacing: 0.2px;
+}
+
+.letter__button {
+    border: none;
+    margin-right: 8px;
+    width: 64px;
+    height: 64px;
+    border-radius: 999px;
+    background: #17e3a6;
+}
+
+/* footer */
 .footer {
     background: #212127;
     padding-top: 80px;

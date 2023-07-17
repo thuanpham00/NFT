@@ -162,7 +162,7 @@ a {
 }
 
 .form__search:hover .search-result {
-    display: block;
+    display: block
 }
 
 /* search__result */
@@ -222,7 +222,7 @@ a {
     margin-top: 4px;
     color: #7a7a7a;
     font-size: 12px;
-    line-height: 1.25; /* 125% */
+    line-height: 1.25;/* 125% */
 }
 
 .header__btn {
@@ -326,7 +326,7 @@ a {
 .icon_x {
     z-index: 2;
     position: absolute;
-    left: -250px;
+    left:-250px;
     top: 90px;
 }
 
@@ -340,8 +340,8 @@ a {
 }
 
 .icon_x:checked ~ .connect-login {
-    display: block;
-}
+    display: block
+} 
 
 .icon_x:not(:checked) ~ .circle_x {
     opacity: 0;
@@ -510,35 +510,7 @@ a {
 
 .NFT-card__item::before {
     position: absolute;
-    content: "";
-    width: 104%;
-    height: 102%;
-    border-radius: 8px;
-    background-color: #fbda61;
-    background-image: linear-gradient(var(--rotate), #fbda61 0%, #ff5acd 100%);
-    z-index: -1;
-    top: -1%;
-    left: -2%;
-    animation: spin 2.5s linear infinite;
-}
-
-.NFT-card__item::after {
-    position: absolute;
-    content: "";
-    top: calc(var(--card-height) / 6);
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    transform: scale(0.8);
-    filter: blur(calc(var(--card-height) / 6));
-    background-color: #fbda61;
-    background-image: linear-gradient(var(--rotate), #fbda61 0%, #ff5acd 100%);
-    opacity: 1;
-    transition: opacity 0.5s;
-    animation: spin 2.5s linear infinite;
+    content: ""
 }
 
 .NFT-card__item:hover {

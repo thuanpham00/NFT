@@ -514,31 +514,10 @@ a {
     width: 104%;
     height: 102%;
     border-radius: 8px;
-    background-color: #fbda61;
-    background-image: linear-gradient(var(--rotate), #fbda61 0%, #ff5acd 100%);
+    background-color: #ffe53b;
+    background-image: linear-gradient(var(--rotate), #ffe53b 0%, #ff2525 74%);
     z-index: -1;
-    top: -1%;
-    left: -2%;
-    animation: spin 2.5s linear infinite;
-}
-
-.NFT-card__item::after {
-    position: absolute;
-    content: "";
-    top: calc(var(--card-height) / 6);
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    transform: scale(0.8);
-    filter: blur(calc(var(--card-height) / 6));
-    background-color: #fbda61;
-    background-image: linear-gradient(var(--rotate), #fbda61 0%, #ff5acd 100%);
-    opacity: 1;
-    transition: opacity 0.5s;
-    animation: spin 2.5s linear infinite;
+    
 }
 
 .NFT-card__item:hover {
