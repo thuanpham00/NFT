@@ -1,0 +1,1 @@
+alert{"Your website has been hacked"}
