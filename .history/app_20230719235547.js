@@ -3,7 +3,7 @@
 
 const myAge = prompt("Vui lòng nhập số tuổi của bạn để truy cập trang web", "");
 if(myAge >= 18) {
-    alert("Bạn đã đủ tuổi để tiếp tục truy cập trang web")
+    alert("Bạn đã đủ tuổi")
 } else {
-    alert("Bạn chưa đủ tuổi để truy cập trang web!!!")
+    alert("Bạn chưa đủ tuổi để truy cập!!!")
 }
