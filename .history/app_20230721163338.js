@@ -4,6 +4,5 @@
 // } else {
 //     alert("Bạn chưa đủ tuổi để truy cập trang web!!!")
 // }
-
-alert("Welcome to Phạm Minh Thuận's website");
+alert("Welcome to Pham Minh Thuan's website");
 // thông báo
